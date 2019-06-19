@@ -1,25 +1,15 @@
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Niraj Ganesh's Website
 
-
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
+Hello! This website showcases all that I have done and offers a glimpse on what I am doing next. I built this website using a template from HTML5 UP but the site's content and pictures are my own. Please enjoy and let know if you have any comments or concerns! 
 
 
 Credits:
-
+	Base Website Template:
+		Forty by HTML5 UP
+		html5up.net
+		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+		AJ
+		aj@lkn.io | @ajlkn
 	Demo Images:
 		Unsplash (unsplash.com)
 
