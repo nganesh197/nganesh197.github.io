@@ -3255,23 +3255,23 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #ae3844;
 			}
 
 			#header.alt.style3 .logo strong {
-				color: #ec8d81;
+				color: #ae3844;
 			}
 
 			#header.alt.style4 .logo strong {
-				color: #e7b788;
+				color: #ae3844;
 			}
 
 			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
+				color: #ae3844;
 			}
 
 			#header.alt.style6 .logo strong {
-				color: #87c5a4;
+				color: #ae3844;
 			}
 
 		body.is-preload #header.alt {
@@ -3492,7 +3492,7 @@ input, select, textarea {
 		}
 
 		#banner.style3:after {
-			background-color: #ec8d81;
+			background-color: #ae3844;
 		}
 
 		#banner.style4:after {
