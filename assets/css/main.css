@@ -2411,6 +2411,7 @@ input, select, textarea {
 			ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
 				display: none;
 			}
+			
 
 			ul.pagination li:first-child {
 				padding-right: 0;
@@ -3583,7 +3584,9 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #FFFFFF; <!-- 2a2f4a -->
+		background-color: #FFFFFF; 
+		/* <!-- 2a2f4a --> */
+		padding: 3rem;
 	}
 
 		#main > * {
