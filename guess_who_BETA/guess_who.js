@@ -23,6 +23,7 @@ cards.forEach(item => item.addEventListener('click', function(){
 const chosen_word = Math.floor(Math.random()*24);
 
 const btn_random = document.querySelector('.btn-random');
+const chosen_box = document.querySelector('.chosen_word');
 let is_chosen = false;
 
 btn_random.addEventListener('click', showWord);
@@ -31,6 +32,7 @@ function showWord(){
   if(!is_chosen){
     console.log(cards[chosen_word]);
     cards[chosen_word].classList.add('chosen_card');
+    chosen_box.innerHTML = cards[chosen_word].innerHTML;
     is_chosen = true;
 
   }
