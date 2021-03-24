@@ -7,20 +7,21 @@
   }
 body{
     display: flex;
+    flex-direction: row;
 
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: normal;
     align-items: left;
     height: 97vh;
     width: 80vw;
 }
 
 p{
-    font-size: 1rem;
+    font-size: 2;
 }
 
 
@@ -189,13 +190,30 @@ button{
     margin: 2rem;
 
 }
-  /* Medium screens */
-  @media screen and (min-width: 600px) {
-    .card-tall {
-      grid-row: span 2 / auto;
+@media screen and (max-width: 480px) {
+    body{
+        flex-direction:column;
     }
-  
-    .card-wide {
-      grid-column: span 2 / auto;
+    .sidebar ol{
+        font-size:.75rem;
     }
+    .sidebar{
+        width:100vw;
+    }
+    tr{
+        overflow:auto;
+    }
+    .card{
+        width:100px;
+    }
+}
+  @media screen and (max-width: 768px) {
+    main{
+        width:100vw;
+    }
+    .sidebar{
+        width:100vw;
+    }
+
+      
   }
