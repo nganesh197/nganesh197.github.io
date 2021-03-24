@@ -1,11 +1,11 @@
 :root{
     font-family: sans-serif;
     background-color: #ccc; 
-    overflow:hidden;
 }
 
 body{
     display: flex;
+    overflow: hidden;
 }
 
 main {
