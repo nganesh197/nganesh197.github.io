@@ -2,10 +2,12 @@
     font-family: sans-serif;
     background-color: #ccc; 
 }
-
+::-webkit-scrollbar {
+    visibility: hidden;
+  }
 body{
     display: flex;
-    overflow: hidden;
+
 }
 
 main {
@@ -141,8 +143,8 @@ td{
 }
 
 .chosen_card{
-    border: 3px solid red;
-    background: red;
+    border: 5px solid red;
+    
 }
 
 .chosen_word{
