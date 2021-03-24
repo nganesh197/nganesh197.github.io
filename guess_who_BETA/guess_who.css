@@ -15,8 +15,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    height: 100vh;
-    width: 70vw;
+    height: 99vh;
+    width: 90vw;
 }
 
 p{
@@ -25,7 +25,7 @@ p{
 
 
 .sidebar{
-    width: 30vw;
+    width: 10vw;
     background-color:white;
     color:black;
     margin:10px;
