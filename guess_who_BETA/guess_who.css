@@ -191,29 +191,38 @@ button{
 
 }
 @media screen and (max-width: 480px) {
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+        margin:
+	}
     body{
         flex-direction:column;
     }
     .sidebar ol{
-        font-size:.75rem;
+        font-size:1rem;
     }
     .sidebar{
-        width:100vw;
+        width:86vw;
+        margin:170rem 1rem 1rem 1rem;
     }
-    tr{
-        overflow:auto;
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 10%;
+
+	}
+    table{
+        width:95vw;
     }
     .card{
-        width:100px;
+        width:70vw;
     }
 }
   @media screen and (max-width: 768px) {
     main{
         width:100vw;
     }
-    .sidebar{
-        width:100vw;
-    }
-
       
   }
