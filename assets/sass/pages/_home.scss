@@ -158,7 +158,8 @@
                             width: auto;
                             margin-right: 2rem;
                         }
-                        @include media-lg{
+                        @include media-xl{
+                            width: 90vw;
                             font-size: _font-sizes(secondary);
                         }
                         & option{

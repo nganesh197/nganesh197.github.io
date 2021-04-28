@@ -746,8 +746,9 @@ footer .copyright-container {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1600px) {
   .home section.one .question select {
+    width: 90vw;
     font-size: 1.75rem;
   }
 }
