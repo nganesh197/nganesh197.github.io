@@ -164,40 +164,16 @@
                         & option{
                             cursor: pointer;
                             font-size: 0.75rem;
-                            &[id='option-desktop']{
-                                display: none;
-                            }
-                            &[id='option-mobile']{
-                                display: block;
-                            }
                             
                             @include media-md{
                                 font-size: _font-sizes(tertiary);
 
-                                &[id='desktop']{
-                                    display: block;
-                                }
-                                &[id='mobile']{
-                                    display: none;
-                                }
                             }
                             @include media-lg{
                                 font-size: _font-sizes(tertiary);
-                                &[id='desktop']{
-                                    display: block;
-                                }
-                                &[id='mobile']{
-                                    display: none;
-                                }
                             }
                             @include media-xl{
                                 font-size: _font-sizes(secondary);
-                                &[id='desktop']{
-                                    display: block;
-                                }
-                                &[id='mobile']{
-                                    display: none;
-                                }
                             }
                         }
                     }

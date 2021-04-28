@@ -757,23 +757,9 @@ footer .copyright-container {
   font-size: 0.75rem;
 }
 
-.home section.one .question select option[id='option-desktop'] {
-  display: none;
-}
-
-.home section.one .question select option[id='option-mobile'] {
-  display: block;
-}
-
 @media screen and (min-width: 768px) {
   .home section.one .question select option {
     font-size: 1.5rem;
-  }
-  .home section.one .question select option[id='desktop'] {
-    display: block;
-  }
-  .home section.one .question select option[id='mobile'] {
-    display: none;
   }
 }
 
@@ -781,23 +767,11 @@ footer .copyright-container {
   .home section.one .question select option {
     font-size: 1.5rem;
   }
-  .home section.one .question select option[id='desktop'] {
-    display: block;
-  }
-  .home section.one .question select option[id='mobile'] {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1600px) {
   .home section.one .question select option {
     font-size: 1.75rem;
-  }
-  .home section.one .question select option[id='desktop'] {
-    display: block;
-  }
-  .home section.one .question select option[id='mobile'] {
-    display: none;
   }
 }
 
