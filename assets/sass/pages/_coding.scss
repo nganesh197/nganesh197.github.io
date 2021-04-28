@@ -197,6 +197,7 @@
                     margin: 1.5rem 0rem;
                     color: _palette(accent2);
                     text-align: left;
+                    line-height: 1.5rem;
                     font-size: _font-sizes(paragraph);
                     @include media-xl{
                         font-size: _font-sizes(tertiary);
