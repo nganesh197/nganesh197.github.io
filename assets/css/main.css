@@ -2795,6 +2795,7 @@ footer .copyright-container {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -3177,6 +3178,7 @@ footer .copyright-container {
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
+  line-height: 2rem;
 }
 
 .mechanical section.two h2.mobile-view {
