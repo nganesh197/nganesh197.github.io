@@ -1,0 +1,111 @@
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin top-of-page{
+    margin-top: $mobile-nav-height;
+    @include media-md{
+      margin-top: $header-height;
+    }
+    @include media-xl{
+      margin-top: $large-header-height;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin media-xl{
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
+
+//
+//  Function to replace characters in a string
+//
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search); 
+    @if $index { @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace); }
+    @return $string; 
+}
+
+  /// Encodes a SVG data URL so IE doesn't choke (via codepen.io/jakob-e/pen/YXXBrp).
+/// @param {string} $svg SVG data URL.
+/// @return {string} Encoded SVG data URL.
+@function svg-url($svg) {
+
+	$svg: str-replace($svg, '"', '\'');
+	$svg: str-replace($svg, '%', '%25');
+	$svg: str-replace($svg, '<', '%3C');
+	$svg: str-replace($svg, '>', '%3E');
+	$svg: str-replace($svg, '&', '%26');
+	$svg: str-replace($svg, '#', '%23');
+	$svg: str-replace($svg, '{', '%7B');
+	$svg: str-replace($svg, '}', '%7D');
+	$svg: str-replace($svg, ';', '%3B');
+
+	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
+
+}
+
+@mixin set_button($color-background){
+  border: solid 2px set_color($color-background);
+  color: set_color($color-background);
+
+  text-transform: uppercase;
+  letter-spacing: 3px;      
+  background-image: button_svg($color_background);  
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-position-x: 90%;
+  background-position-y: center;
+
+  font-weight: _font-weights(semi-bold);
+
+  &:hover{
+    border: solid 4px set_hover_color($color-background);
+    color: set_hover_color($color-background);
+    background-image: set_hover_svg($color-background);
+  }
+}
+
+@mixin box-shadow-details{
+  box-shadow: 0 0 10px 10px _palette(h-fg);
+}
+
+
+
+

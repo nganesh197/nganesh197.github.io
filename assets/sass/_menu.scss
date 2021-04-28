@@ -1,0 +1,256 @@
+header{
+    position: relative;
+    top: 0%;
+    width: 99vw;
+    height: $mobile-nav-height;
+    background-color: transparent;
+    position: fixed;
+
+    @include media-lg{
+        height: $header-height;
+    }
+    @include media-xl{
+        height: $large-header-height;
+    }
+
+    @include media-xl{
+        height: 7vh;
+    }
+
+    &.scrolled{
+        background-color: _palette(bg-alt);
+
+    }
+}
+
+.menu{
+    &-nav{
+        visibility: hidden;
+        @include media-lg{
+            visibility: visible;
+            background-color: transparent;
+            align-items: right;
+            width: auto;
+        }
+        @include media-xl{
+            margin: 0.1rem;
+        }
+
+        &.open{
+            visibility: visible;
+            top: $mobile-nav-height;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding:5rem 0;
+            left: 0;
+            background-color: _palette(bg);
+            overflow-y: hidden;
+            position: fixed;
+        }
+        z-index: 999;
+        list-style-type: none;
+        position: absolute;
+        right: 2%;
+        font-weight: _font-weights(semi-bold);
+        font-family: _fonts(family-alt);
+        font-size: _font-sizes(menu_text);
+        text-transform: lowercase;
+    
+        &__item{
+            @include media-lg{
+                display: inline-block;
+                visibility: visible;
+
+                &.scrolled{
+                    border-right: solid 1px _palette(fg-alt);
+                    &:last-child{
+                        border-right: none;
+                    }
+
+                    & a.scrolled{
+                        color: _palette(fg-alt);
+
+                        &:hover{
+                            color:_palette(h-fg);
+                        }
+                    }
+                }
+            }
+
+            @include media-xl {
+                font-size: _font-sizes(tertiary);
+            }
+            visibility:hidden;
+
+            &.open{
+                visibility: visible;
+                align-items: center;
+                left: 50%;
+        
+                padding:1rem 35%;
+                font-size: 1.25rem;
+                font-weight: _font-weights(semi-bold);
+                font-family: _font(family);
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 2px;
+
+
+                &:nth-child(6n-5){
+                    border-left:solid 10px lighten(_palette(accent1), 20%);
+                    border-bottom: solid 1px #aaa;
+                }
+                &:nth-child(6n - 4) {
+                    border-left:solid 10px lighten(_palette(accent2), 20%);
+                    border-bottom: solid 1px #aaa;
+                }
+                &:nth-child(6n - 3){
+                    border-left:solid 10px _palette(accent3);
+                    border-bottom: solid 1px #aaa;
+                }
+                &:nth-child(6n-2){
+                    border-left:solid 10px _palette(accent4);
+                    border-bottom: solid 1px #aaa;
+                }
+                &:nth-child(6n-1){
+                    border-left:solid 10px lighten(_palette(accent5), 20%);
+                    border-bottom: solid 1px #aaa;
+                }
+                &:nth-child(6n){
+                    border-left:solid 10px lighten(_palette(accent6), 20%);
+                    border-bottom: solid 1px #aaa;
+                }
+            }
+            display: block;
+            border-right: solid 1px _palette(fg);
+            padding: 0.15rem 0.5rem;
+
+            &:last-child{
+                border-right: none;
+            }
+
+
+            & a{
+                color: _palette(fg);
+
+                &:hover{
+                    color: _palette(accent2);
+                }                
+            }
+        }
+    }
+
+
+}
+
+.logo{
+    position: absolute;
+    left: 1rem;
+    top: 21%;
+
+    @include media-lg{
+        top: 22%;
+    }
+    @include media-xl{
+        top: 23%;  
+        font-size: 1.25rem; 
+        letter-spacing: 6px;
+    }
+    background-color: _palette(bg-alt);
+    color: white;
+    text-transform: uppercase;
+    font-weight: _font-weights(semi-bold);
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+
+    display: inline-block;
+    padding: 0.4rem 0.2rem 0.3rem 0.3rem;
+    text-align: center;
+
+    &:hover{
+        background-color: _palette(accent2);
+    }
+
+    &.scrolled{
+        border: solid 1px white;
+
+        &:hover{
+            border: solid 1px _palette(accent2);
+        }
+    }
+}
+
+.menu-btn {
+
+    @include media-lg{
+        visibility: hidden;
+    }
+    position: absolute;
+    visibility: visible;
+    z-index: 1000;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    &__burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: _palette(fg);
+        @include transition-ease;
+
+        &::before {
+            content:'';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background-color: _palette(fg);
+            @include transition-ease;
+        }
+        &::after {
+            content:'';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background-color: _palette(fg);
+            @include transition-ease;
+        }
+
+        &.open {
+            transform: rotate(360deg);
+            background: transparent;
+
+            &::before {
+                 transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            &::after{
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+
+        }
+        &.scrolled{
+            background-color: _palette(fg-alt);
+            &::before{
+                background-color: _palette(fg-alt);
+            }
+            &::after{
+                background-color: _palette(fg-alt);
+            }
+        }
+
+        &.scrolled.open{
+            background-color: transparent;
+        }
+    }
+}
+

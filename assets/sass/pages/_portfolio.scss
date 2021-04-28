@@ -1,0 +1,299 @@
+.portfolio{
+    @include top-of-page;
+
+    & .one{
+        padding: 3rem 3rem 0 0rem;
+    }
+    
+    & h1, h2{
+        margin-left: 1rem;
+        @include media-lg{
+            margin-left: 3rem;
+        }
+        @include media-xl{
+            font-size: _font-sizes(headliner);
+        }
+    }
+    & h2{
+        margin-top: 3rem;
+        color: _palette(accent2);
+        font-size:2.5rem;
+        @include media-lg{
+            font-size: 3rem;
+        }
+    }
+
+    & .item{
+        position: relative;
+        margin: 5rem 0 0rem 0;
+        height: fit-content;
+
+        background-color: _palette(fg);
+
+        @include media-lg{
+            height: 55vh;
+            width: 100%;
+            margin: 6.5em 0;
+            &:before, &:after{
+                height: 6.5em;
+                width: 100%;
+                background-size: 100% 100%;
+                display: block;
+                position: absolute;
+                content:'';  
+                background-repeat: no-repeat;
+            }
+
+            &:before{
+                top:-6.5em;
+                background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" style="fill:#{_palette(fg)};" /></svg>');
+            }
+            &:after{
+                background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" style="fill:#{_palette(fg)};" /></svg>');
+                bottom: -6.5em;
+                transform: scaleY(-1);
+            }
+        }
+
+        &.alternate{
+            background-color: _palette(bg);
+            margin-top: 0;
+            @include media-lg{
+                &:before, &:after{
+                    transform: scaleX(-1);
+                    background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" style="fill:#{_palette(bg)};" /></svg>');
+                }
+            }
+            @include media-xl{
+                &[id="extra-big"]{
+                    height: 70vh;
+                }
+            }
+            & .inner{
+                & .images{
+                    & .browser-bar{
+                        background-color: #ccc;
+                        color: #fff;
+                        & .browser-title{
+                            color: _palette(text-alt);
+                        }
+                    }
+                }
+
+                & .details{
+                    & h3{
+                        color: _palette(fg);
+                    }
+                    & p{
+                        color: _palette(text-alt)
+                    }
+                    & .call-to-action a{
+                        @include set_button(_palette(bg));
+                    }
+                }
+            }
+        }
+
+        & .inner{
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            flex-shrink: 0;
+            padding:1rem 0;
+
+            @include media-lg{
+                flex-direction: row;
+            }
+
+            & .images{
+                width: 88vw;
+                height:20rem;
+
+                @include media-md{
+                    height: 31rem;
+                    width:90vw;
+                }
+
+                & [id='mobile']{
+                    background-color: transparent;
+                    margin-left: 1rem;  
+                    & img{
+                        width: auto;
+                        height: 20rem;
+
+                    }
+                    @include media-md{
+                        margin-top:1rem;
+                        & img{
+                            height: 30rem;
+                        }
+                    }
+                    @include media-lg{
+                        margin-bottom: 0;
+                        width: auto;
+                        & img{
+                            margin-top: -3rem;
+                            height:23rem;
+                            width: auto;
+                        }
+                    }
+                    @include media-xl{
+                        & img{
+                            margin-top: -3rem;
+                            height:30rem;
+                            width: auto;
+                        }
+                    }
+
+                }
+                &.desktop-image{
+                    display:none;
+                }
+                &.mobile-image{
+                    display: block;
+                }
+                @include media-lg{
+                    width: 50vw; 
+                    &.desktop-image{
+                        display: block;
+                    }
+                    &.mobile-image{
+                        display: none;
+                    }
+                }
+                position: relative;
+                & .browser-bar{
+                    width: inherit;
+                    @include media-lg{
+                        width: 25rem;
+                        margin: 1.75rem 3rem;
+                    }
+                    @include media-xl{
+                        width: 40rem;
+                    }
+                    height: 1.5rem;
+                    background-color: _palette(text-alt);
+                    margin: 1.75rem 1rem;
+                    
+                    &-button{
+                        height: 10px; 
+                        width: 10px;
+                        position: absolute;
+                        top: 2.1rem;
+                        left:2rem;
+                        @include media-lg{
+                            left: 3.9rem;
+                        }
+                        background-color: red;
+                        border-radius: 50%;
+
+                        &:before, &:after{
+                            content: "";
+                            height: 10px;
+                            width: 10px;
+                            top: 0px;
+                            position: absolute;
+                            border-radius: 50%;
+                        }
+
+                        &:before{
+                            background-color: orange;
+                            left: 1.1rem;
+                        }
+                        &:after{
+                            background-color: limegreen;
+                            left:2.2rem;
+
+                        }
+                    }
+                    & .browser-title{
+                        @include media-lg{
+                            text-align: center;
+                        }
+                        text-align: right;
+                        padding: 0.25rem;
+                        margin-right: 0.5rem;
+                        letter-spacing: 2px;
+                        font-weight: 550;
+                        color: #ccc;
+                        text-transform: lowercase;
+                    }
+
+                    & img{
+                        width: inherit;
+                    }
+                }
+                
+
+            }
+            & .details{
+                padding: 1rem;
+                @include media-md{
+                    padding: 2rem;
+                }
+                @include media-lg{
+                    padding: 0 3rem;
+                    margin-top: 0;
+                }
+                h3{
+                    font-size: _font-sizes(secondary);
+                    color: _palette(fg-alt);
+                    padding-bottom: 0.5rem;
+                    @include media-xl{
+                        & {
+                            font-size: _font-sizes(main);
+                        }
+                    }
+                }
+                p{
+                    color: #eee;
+                    font-size: 1.15rem;
+                    line-height: 1.5rem;
+
+                    @include media-xl{
+                        font-size: _font-sizes(tertiary);
+                        line-height: 2.5rem;
+                    }
+                }
+                & .call-to-action{
+                    margin: 3rem 0;
+                    display: flex;
+                    flex-direction: column;
+
+                    @include media-lg{
+                        flex-direction: row;
+                    }
+
+                    & a{
+                        padding: 1rem 4rem 1rem 1rem;
+                        margin-right: 1rem;
+                        margin-top: 1rem;
+                        @include media-lg{
+                            margin-top: 0rem;
+                        }
+                        font-size: 0.75rem;
+                        @include set_button(_palette(accent2));
+                        
+                        @include media-xl{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.collage {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2rem;
+    display: none;
+
+    &-image{
+        height: 5rem !important;
+        color: _palette(text-alt);
+        margin-bottom: 5rem;
+    }
+
+}

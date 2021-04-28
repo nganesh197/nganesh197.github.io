@@ -1,98 +1,315 @@
-<!DOCTYPE HTML>
-<!--
-Initial Template from	Forty by HTML5 U | html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-Content created by Niraj Ganesh
--->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-	<head>
-		<title>Niraj's Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel='icon' href='favicon.ico' />
-	</head>
-	<body class="is-preload">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume</title>
+        <meta name="description" content="Niraj Ganesh's Resume/ Curriculum Vitae. Web page requires a code given by Niraj to be able to view the resume.">
+        <meta name="keywords" content="Resume, Curriculum Viae, Achievements">
+        <meta name="author" content="Niraj Ganesh">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <link rel="stylesheet" href="assets/css/main.css">
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Niraj Ganesh</strong> </a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="assets/js/nav.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/e242ac24f0.js" crossorigin="anonymous"></script>
 
-				<!-- Menu -->
-				<nav id="menu">
-					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="Profile.html">Quick Profile Look</a></li>
-						<li><a href="Resume.html">Resume/Curriculum Vitae</a></li>
-						<li><a href="WebDev_Projects.html">Website Des/Dev Projects</a></li>
-						<li><a href="Coding_Projects.html">Coding Projects</a></li>
-						<li><a href="Community.html">Community-focused Ventures</a></li>
-						<li><a href="Portfolio.html">Design Portfolio</a></li>
-					</ul>
-				</nav>
-
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-
-							<header class="major">
-								<h1>Resume / Curriculum Vitae</h1>
-								<h4>Last Updated 1/13/2021 - Resume version currently reflects my work in Product Design. </h4>
-							</header>
-						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<body class="major">
-								    <iframe src="assets/Resume.pdf" width="100%" height="1250px">
-								    </iframe>
-									</body>
-
-
-							</section>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/niraj-ganesh/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/nganesh197" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://medium.com/@nganesh197" class="icon alt fa-medium"><span class="label">Medium</span></a></li>
-              <li><a href="https://www.instagram.com/nutshell_engineering/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="mailto:nganesh@berkeley.edu?subject = Feedback&body = Message" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; 2020</li><li>Niraj Ganesh </li>
-							<li><a href="https://html5up.net">Template from HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <main class="resume">
+                    <section class="one">
+                        <h1>Re&#769sume&#769/ Curriculum Vitae</h1>
+                        <form id="code-entry" action="">
+                            <input type="text" id="code_val" name="code" placeholder="Please enter code or request one from Niraj">
+                            <button type="button" onclick="enterCode()" >Let's go!</button>
+                        </form>
+                    </section>
+                    <section class="resume-details">
+                        <section class="base-information">
+                            <h1>Niraj Ganesh</h1><br>
+                            <p class="webdev" id="tagline"> Web Developer </p>
+                            <hr>
+                            <h2>Details</h2>
+                            <ul class="details">
+                                <li><a href="https://www.linkedin.com/in/niraj-ganesh/" class="icon alt" target="_blank"><i class="fab fa-linkedin-in"></i>Linkedin</a></li>
+                                <li><a href="https://github.com/nganesh197" class="icon alt"><i class="fab fa-github"></i>GitHub</a></li>
+                                <li><a href="mailto:nganesh@berkeley.edu?subject=Job Inquiry" class="icon alt" target="_blank"><i class="far fa-envelope"></i>Email</a></li>
+                            </ul><hr>
+                            <h2>Programming Skills</h2>
+                            <ul class="skills">
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li> HTML</li>
+                                <li>CSS</li>
+                                <li>Sass</li>
+                                <li>Javascript</li>
+                                <li>C++</li>
+                            </ul> <br><br>
+                            <h2>Engineering Skills</h2>
+                            <ul class="skills">
+                                <li>Fusion 360</li>
+                                <li>Solidworks</li>
+                                <li>Matlab</li>
+                                <li>AutoCAD</li>
+                            </ul> <br><br>
+                            <h2>Design Skills</h2>
+                            <ul class="skills">
+                                <li>Sketching</li>
+                                <li>Canva</li>
+                                <li>Framer</li>
+                                <li>Isometric Drawing</li>
+                            </ul> <br><br>
+                            <h2>Soft Skills</h2>
+                            <ul class="skills">
+                                <li>Strong Leadership</li>
+                                <li>Team player</li>
+                                <li>Critical Thinker</li>
+                                <li> Diligent</li>
+                                <li> Great interpersonal skills</li>
+                            </ul><br><br>
+                            <h2>Application Skills</h2>
+                            <ul class="skills">
+                                <li>Word</li>
+                                <li>PowerPoint</li>
+                                <li>Excel</li>
+                                <li>Access</li>
+                                <li>Google Workspace</li>
+                                <li>Salesforce CRM</li>
+                                <li>PLEX ERP</li>
+                            </ul>
+                        </section>
+                        <section class="achievements">
+                            <article class="summary">
+                                <h2> Profile </h2><hr><br>
+                                <p id="web-developers">An enthusiastic web developer looking to solve life's inefficiencies and improve people's lives. Niraj has experience working in the Internet of Things, Supply Chain, and Operation spaces with a penchant to develop customer-centric web applications. He is able to self-management on independent projects or colloborate well in a team setting. Niraj is particularly adept in Python, HTML5, CSS/Sass, and SQL resulting in the ability to build full-stack applications.</p>
+                            </article><br><br>
+                            <div class="academics">
+                                <h2>Academics </h2><hr><br>
+                                <div class="university">
+                                    <div class="title">
+                                        <h4>University of Southern California</h4>
+                                        <p>2021 - intended 2023</p>
+                                    </div>
+                                    <p>Master of Science in Product Development Engineering </p>
+                                </div><br>
+                                <div class="university">
+                                    <div class="title">
+                                        <h4>University of California, Berkeley</h4>
+                                        <p>2016-2020</p>
+                                    </div>
+                                    <p>Bachelor of Science in Industrial Engineering and Operations Research </p>
+                                </div>
+                            </div><br><br>
+                            <div class="experiences">
+                                <h2>Experience </h2><hr><br>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Sales and Operation Intern | Yapstone Inc.</h4>
+                                        <p>June 2019 - August 2019</p>
+                                    </div>
+                                    <p class="company-description">Provider of online and mobile payment solutions for global marketplaces, software, and large vertical markets</p>    
+                                    <ul>
+                                        <li>Developed Apex code to simplify lead conversion process for company</li>
+                                        <li>Developed a Python GUI for Sales and Marketing team to automate and validate data population of sales leads and opportunities saving company thousands of dollars</li>
+                                        <li>Achieved Salesforce Adventurer Rank</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>PLEX ERP and NetSuite Intern | DKM Inc.</h4>
+                                        <p>December 2018 - May 2019</p>
+                                    </div>
+                                    <p class="company-description">Consulting company that specializes in CRM implementation </p>    
+                                    <ul>
+                                        <li>Developed skills in the Order to Cash and Procure to Pay processes</li>
+                                        <li>Completed accounting reconciliation for medical device company by comparing NetSuite data with the Business Object report from the 3rd party logistics company</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Business Analyst | Pack and Ship Store, West Covina</h4>
+                                        <p>December 2017 – January 2018</p>
+                                    </div>
+                                    <p class="company-description">Family-run business that provides shipping, packaging, and UHaul services to the West Covina community</p>    
+                                    <ul>
+                                        <li>Consolidated inventory of the store through comparison of inventory database to shop floor inventory</li>
+                                        <li>Computed year to year analysis of sale figures to understand sales trends within certain departments</li>
+                                        <li>Resolved customer complaints, processed incoming and outgoing shipping packages, and managed the cash register</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Business Analyst | Pack and Ship Store, West Covina</h4>
+                                        <p>December 2017 – January 2018</p>
+                                    </div>
+                                    <p class="company-description">Family-run business that provides shipping, packaging, and UHaul services to the West Covina community</p>    
+                                    <ul>
+                                        <li>Consolidated inventory of the store through comparison of inventory database to shop floor inventory</li>
+                                        <li>Computed year to year analysis of sale figures to understand sales trends within certain departments</li>
+                                        <li>Resolved customer complaints, processed incoming and outgoing shipping packages, and managed the cash register</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Co-founder | Velocitee Labs</h4>
+                                        <p>May 2020 – April 2021</p>
+                                    </div>
+                                    <p class="company-description">Velocitee Labs is an IoT company focused on revolutionizing the transportation industry</p>    
+                                    <ul>
+                                        <li>Developed full stack framework to support multiple products on backend system</li>
+                                        <li>Designed mobile mockups and website interfaces using Framer and Powerpoint</li>
+                                        <li>Gathered initial user survey feedback and analyzed data as part of market research</li>
+                                        <li>Generated multiple proof of concepts as part of development of minimum viable product (MVP)</li>  
+                                        <li>Developed company's business plan and kept track of company's finances</li>
+                                        <li>Wrote Django framework code for web platform and utilized Heroku to create a production ready web application</li>
+                                        <li>Designed pitch decks, company logo, promotional graphics, websites to improve marketing of the company</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Research Intern | UC Berkeley/ UC San Francisco Ergonomics Program</h4>
+                                        <p>May 2018 – January 2020</p>
+                                    </div>
+                                    <p class="company-description">World-renowned research group focused on improving the workforce through public health, engineering, and medical methodologies</p>    
+                                    <ul>
+                                        <li>Developed a robot arm apparatus to conduct quality control tests on 100 activity trackers </li>
+                                        <li>Designed and built testing rigs to ensure accurate measurement tracking of activity trackers</li>
+                                        <li>Prototyped, tested 25+ exterior cases designs, 10+ battery types (varying power), and 3 different haptic motors</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Web Developer | Center for Occupational and Environmental Health</h4>
+                                        <p>May 2018 – May 2019</p>
+                                    </div>
+                                    <p class="company-description">World-renowned research group focused on improving the workforce through public health, engineering, and medical methodologies</p>    
+                                    <ul>
+                                        <li>Updated current website platform, addressed usability gaps on current website platform, and initiated transfer of websites to new platforms </li>
+                                        <li>Supported the migration registration database to a new site, designed new site for ease of accessibility</li>
+                                        <li> Redesigned, tested, and implemented the organization and its affiliates’ websites using Wix</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="experiences">
+                                <h2>Projects </h2><hr><br>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Ergonomic Handcuff for ultrasound machines</h4>
+                                    </div>  
+                                    <ul>
+                                        <li>Developed a novel solution to mitigate the risk of musculosketal injury while using an ultrasound machine over a prolonged time</li>
+                                        <li>Designed prototype mockups as well as aided in gathering user feedback </li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Machine Learning Housing Prediction Model</h4>
+                                    </div>   
+                                    <ul>
+                                        <li>Composed Python code to scrub data to find the zip codes for the metropolitan statistical areas which resulted in acquiring over 10,000 unique zip codes to figure out the factors that lead to higher costs of living</li>
+                                        <li>Aided in designing and performing model testing in R on dataset containing over 2,000,000 data points to predict the median housing price based on zip code</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Database Implementation</h4>
+                                    </div>
+                                    <p class="company-description">Family-run business that provides shipping, packaging, and UHaul services to the West Covina community</p>    
+                                    <ul>
+                                        <li>Developed SQL queries to maximize client’s profits and optimize scheduling of employees and shipments</li>
+                                        <li>Assisted in the development of a SQL database for SF Bay Railroad to eliminate company’s data redundancy problem</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Machine Learning Lead Time Prediction Model</h4>
+                                    </div>    
+                                    <ul>
+                                        <li>Developed a Python script to pre-process 100,000+ row data sets from Excel before running machine learning models</li>
+                                        <li>Composed R code to data mine data sets resulting in a ML model that reduces lead time error by ~30%</li>
+                                        <li>Created graphs and pie charts using Excel</li>
+                                        <li>Worked with Fortune 500 garment apparel company’s global supply chain department to improve their lead time predictions to reduce purchase order commitments to under 23%</li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Predicting Store Data</h4>
+                                    </div>
+                                    <ul>
+                                        <li> Developed an algorithm to parse through a retail store’s data that utilized support vector machines and minimized cross validation errors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="experiences">
+                                <h2>Leadership </h2><hr><br>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>President | Engineering Student Council</h4>
+                                        <p>May 2018 – May 2020</p>
+                                    </div>
+                                    <ul>
+                                        <li>Developed an Undergraduate Equity and Inclusion Committee with Berkeley Engineering's Faculty Equity and Inclusion Council and five student identity organizations</li>
+                                        <li>Founded initiative that provided free menstrual products to 8 womxn identifying restrooms, programmed a web tool to streamline restocking, led external partner outreach, and secured $40k in products</li>
+                                        <li>Managed budget of $84k and team of 30; negotiated a $10k increase from campus student government</li>
+                                        <li>Managed a 10 member executive team and 20 member committee team</li>
+                                        <li>Utilized HTML, CSS, and Javascript to conceptualize and execute the creation of a new website for the ESC</li>
+                                        <li>Expanded ESC's web portfolio to 3 websites and 7 web tools</li>
+                                        <li>Mentored two new Technical Directors </li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Board Member/Business Operations | Pioneers in Engineering</h4>
+                                        <p>August 2020 – present / September 2016 - May 2020</p>
+                                    </div>
+                                    <ul>
+                                        <li>Led and organized the 2017 kickoff event of the robotics season for low income, underrepresented minority high school students with more than 200 people in attendance from 21 high schools</li>
+                                        <li>Developed grants reports, designed promotional materials, and volunteered at events</li>
+                                        <li>Mentored a team of 13 high school students competing in the 2017 Pioneers in Engineering Competition </li>
+                                        <li>chair of bedrock committee which focuses on operations of the nonprofit foundation of the student organization </li>
+                                    </ul>
+                                </div>
+                                <div id="experience">
+                                    <div class="title">
+                                        <h4>Event Manager | California Technology Student Association</h4>
+                                        <p>March 2017 - June 2018</p>
+                                    </div>
+                                    <ul>
+                                        <li>Organized events for the state conference with more than 150 people from 18 high schools in attendance</li>
+                                        <li> Compiled resources, proctored exams, updated web applications such as Weebly and Trello, and scheduled judges for more than 20 events</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>  
+                    </section>             
+                </main>
+            </div>
+            <footer id="footer">
+                    <div class="inner">
+                        <div class=icons>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/niraj-ganesh/" class="icon alt" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/nganesh197" class="icon alt"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://medium.com/@nganesh197" class="icon alt"><i class="fab fa-medium-m"></i></a></li>
+                                <li><a href="mailto:nganesh@berkeley.edu?subject = Feedback&body = Message" class="icon alt" target="_blank"><i class="far fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-container">
+                            <ul class="copyright">
+                                <li>&copy; 2021</li><li class="ownership">Made with <a class="heart"></a> by Niraj Ganesh </li>
+                            </ul>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+        <script src="https://kit.fontawesome.com/e242ac24f0.js" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>   
+    </body>
 </html>

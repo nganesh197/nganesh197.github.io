@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+  
+body{
+    @include scrollbars(10px, _palette(fg), _palette(bg));
+    background-color: _palette(bg);
+    color:set-text-color( _palette(bg));
+    font-family: _font(family);
+    font-weight: _font(weight);
+    height: 100%;
+    font-family:_font(family);
+    line-height: 1;
+
+    position: relative;
+    min-height: 100vh;
+
+}
+
+
+h1{
+    font-size: _font-sizes(main);
+    font-weight: _font-weights(bold);
+}
+
+h2{
+    font-size: _font-sizes(secondary);
+    font-weight: _font-weights(semi-bold);
+}
+
+h3, h4, h5{
+    font-size: _font-sizes(tertiary);
+    font-weight: _font-weights(semi-bold);
+}
+
+h1,h2,h3{
+    color: _palette(fg);
+}
+
+p{
+    color: _palette(fg-alt);
+    font-size: _font-sizes(text);
+    font-weight: _font-weights(regular);
+}
+
+a{
+    color: set-text-color(_palette(fg));
+    text-decoration:none; 
+}
+
+

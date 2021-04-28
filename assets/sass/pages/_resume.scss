@@ -1,0 +1,196 @@
+.resume {
+    @include top-of-page;
+
+    p{
+        color: _palette(text-alt);
+    }
+
+    & .one{
+        display:block;
+        padding: 1rem;
+        @include media-md{
+            padding: 9rem 3rem 0 0rem;
+            margin-top: 0;
+            margin-left: 3rem;
+        }
+        height: 80vh;
+        
+        & h1{
+            font-size: _font-sizes(main);
+            margin-top: 5rem;
+            @include media-md{
+                margin-top: 0rem;
+            }
+        }
+        & [id='code-entry']{
+            display: block;
+            margin-top: 3rem;
+
+            [id='code_val']{
+                width: 85vw;
+                @include media-md{
+                    width: 85vw;
+                    font-size: 1.1rem;
+                }
+                height: 3rem;
+                padding: 0.5rem;
+                font-size:0.69rem;
+                letter-spacing: 2px;
+                background-color: _palette(bg);
+                border: solid 2px _palette(fg);
+                color: _palette(accent2);
+            }
+
+            button {
+                margin-top: 2rem;
+                border:solid 1px _palette(fg);
+                padding: 0.75rem 2rem;
+                font-size: _font-sizes(paragraph);
+                font-weight: _font-weights(semi-bold);
+                color:_palette(text-alt);
+                opacity: 0.7;
+                background-color: _palette(bg);
+                cursor: pointer;
+    
+                @include transition-ease;
+    
+                &:hover {
+                    border-width: 2px;
+                    padding: 0.72rem 1.8rem;
+                    border-color: _palette(accent2);
+                    color: _palette(accent2);
+                    font-size: _font-sizes(tertiary);
+                    font-weight: _font-weights(bold);
+    
+                    @include transition-ease;
+                }
+    
+            }
+        }
+    }
+
+    & .resume-details{
+        display: none;
+        flex-direction: row;
+
+        & .base-information{
+            border-right:solid 1px _palette(fg);
+            height: auto;
+            width: 25vw;
+            padding: 2rem 2rem;
+            text-align: left;
+
+
+            & h2{
+                line-height: 3.25rem;
+                margin-bottom: 1rem;
+            }
+
+            & p[id="tagline"]{
+                margin-bottom: 1rem;
+                font-size: _font-sizes(tertiary);
+            }
+            & hr{
+                margin: 2rem 0;
+            }
+
+            &  .details{
+                margin: 0.5rem 0;
+                align-items: left;
+                display: flex;
+                flex-direction: row;
+                li{
+                    list-style-type: none;
+                    margin-top: 1rem;
+                    line-height: 1.5rem;
+                    i{
+                        margin-right: 1.5rem;
+                        color: _palette(fg);
+                    }
+                    a:hover{
+                        i{
+                            color:_palette(accent2);
+                        }
+                    }
+                    &.ownership{
+                        padding-left: 1rem;
+                        margin-left: 1rem;
+                        border-left: solid 1px _palette(fg);
+                    }
+                }
+            }
+
+            & .skills{
+                list-style-type: none;
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                & li{
+                    background-color: _palette(fg);
+                    padding: 0.5rem;
+                    color: _palette(fg-alt);
+                    margin-right: 0.5rem;
+                    margin-top: 0.5rem;
+                }
+
+            }
+        }
+
+        & .achievements{
+            padding: 1rem 2rem;
+            width: 75vw;
+
+            p{
+                font-size: 1rem;
+            }
+            h4{
+                color: #444;
+                font-size: 1.25rem;
+            }
+
+            & .academics{
+                & .university{
+                    & .title{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+            [id="experience"]{
+                margin-bottom: 1.5rem;
+                & .title{
+                    display: flex;
+                    justify-content: space-between;
+
+                    p{
+                        font-style: italic;
+                    }
+                }
+
+                & p.company-description{
+                    font-style: italic;
+                    margin-top: 0.25rem;
+                }
+
+                & ul{
+                    margin-left: 2rem;
+                    list-style-type: square;
+
+                    & li{
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .all{
+        display: flex;
+    }
+}

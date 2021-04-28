@@ -1,0 +1,66 @@
+// Font.
+$font: (
+    family:				('Source Sans Pro', Helvetica, sans-serif),
+    family-fixed:		('Courier New', monospace),
+    weight:				300,
+    weight-bold:		600,
+    letter-spacing:		0.025em,
+    letter-spacing-alt:	0.25em
+);
+
+
+$font-sizes: (
+    headliner: 6rem,
+    main: 4rem,
+    mobile-main: 3rem,
+    secondary: 1.75rem,
+    tertiary: 1.5rem,
+    paragraph: 1rem,
+    small-print: 0.75rem,
+    menu_text: 0.85rem
+);
+
+$font-weights: (
+    bold: 700,
+    semi-bold: 600,
+    regular: 500,
+    thin: 400,
+    extra-thin: 300
+);
+
+// Duration.
+$duration: (
+    menu:				0.35s,
+    transition:			0.2s,
+    banner:				2.5s
+);
+
+//Color Palette 
+$palette: (
+    bg:					#E0E0DB,
+    bg-alt:				#38665B,
+    fg:					#38665B,
+    fg-alt:             #fff,
+    fg-bold:			#38665B,
+    h-fg: 				#ccc,
+    catchall:			white,
+    text-alt:           #333,
+    highlighted:        #386644,  
+    f-bg:     			#E0E0DB,
+    f-accent1: 			#f7f7f7,
+    fg-light:			rgba(244,244,255,0.2),
+    border:				rgba(212,212,255,0.1),
+    border-bg:			rgba(212,212,255,0.035),
+    highlight:			#454757,
+    accent1:			#443866,
+    accent2:			#663843,
+    accent3:			#4A8778,//#5A6638,
+    accent4:			#DE9D5E,
+    accent5:			#362117,
+    accent6:			#172C36
+);
+
+$header-height: 3rem;
+$large-header-height: 5rem;
+$mobile-nav-height: 7.2vh;
+$footer-height: 5vh;

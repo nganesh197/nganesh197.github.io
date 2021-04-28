@@ -1,0 +1,210 @@
+.mechanical{
+    @include top-of-page;
+
+
+    .mech-cards-title{
+        padding: 3rem;
+        line-height: 2rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+        @include media-md{
+            height: 10rem;
+        }
+        & p{
+            color: _palette(text-alt);
+            font-size: _font-sizes(tertiary);
+        }
+
+        & .mech-title{
+            font-size: _font-sizes(secondary);
+            border-bottom: solid 2px _palette(fg);
+        }
+    }
+
+    section{
+        &.one{
+            background-color: #362117;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%232e1c14' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(45deg, _palette(accent5),_palette(accent5), #683F2C);
+            height: 17rem;
+            @include media-md{
+                height: 10rem;
+            }
+            width: 100%;
+            
+            & h1{
+                color: white;
+                padding: 4rem 2.5rem;
+            }
+        }
+
+        &.two{
+            height: 60rem;
+            width: auto;
+            padding: 3rem;
+            background-color: _palette(bg);
+            display: flex;
+            margin-bottom: 4rem;
+            flex-direction: column;
+            @include media-md{
+                height: 33rem;
+            }
+            @include media-lg{
+                flex-direction: row;
+                height: 30rem;
+            }
+
+            & h2{  
+                width: 100%;
+                &.mobile-view{
+                    display: block;
+                    margin:1rem 0;
+                }
+                &.desktop-view{
+                    display: none;
+                }
+                @include media-lg{
+                    width: 40%;
+                    &.desktop-view{
+                        display: block;
+                    }
+                    &.mobile-view{
+                        display: none;
+                    }
+                }
+                margin: auto;
+                margin-left: rem;
+                font-size: _font-sizes(tertiary);
+                @include media-xl{
+                    font-size: _font-sizes(secondary);
+                }
+                color: _palette(text-alt);
+                font-weight: _font-weights(regular);
+            }
+            & .skills-box{
+                margin-left: 0rem;
+                padding: 0rem;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 3rem;
+
+                @include media-md{
+                    flex-direction: row;
+                }
+
+                @include media-lg{
+                    margin-right: 2rem;
+                    margin-top: 0rem;
+                    padding: 1rem;
+                    width: 60%;
+                    height: inherit;
+                }
+                @include box-shadow-details;
+                background-color: _palette(fg-alt);
+
+                & .box{
+                    @include media-md{
+                        border-right: solid 1px _palette(fg);
+                    }
+                    padding: 1rem;
+                    width: 100%;
+                    text-align: center;
+                    &:last-child{
+                        border-right: none;
+                    }
+                    & h3{
+                        margin-bottom: 1rem;
+                        @include media-xl{
+                            font-size: _font-sizes(secondary);
+                        }
+                    }
+                    & h4{
+                        font-size: _font-sizes(small-print);
+                        @include media-xl{
+                            font-size: _font-sizes(paragraph);
+                        }
+                        font-style:italic;
+                        font-weight: _font-weights(regular);
+                        margin-bottom: 1rem;
+                    }
+
+                    & ul{
+                        margin-left: 1rem;
+                        list-style-type: none;
+                        text-align:center;
+                        & li{ 
+                            margin-bottom: 1rem;
+                            & i{
+                            margin-right: 0.5rem;
+                            color: _palette(fg);
+                        }
+                    }
+                }
+
+            }
+        }
+        }
+        &.display-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            @include media-md{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            
+            @include media-xl{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+
+            padding: 0rem 2rem;
+            gap: 1rem;
+
+            &.laser{
+                gap:0;  
+            }
+
+            & .card{
+                width: auto;
+                height: fit-content;
+                background-color: _palette(bg);
+                padding: 2rem 1rem;
+                text-align: center;
+
+                &.laser{
+                    height:auto;
+                    margin: 0;
+                    padding: 0 1rem;
+                }
+
+                & img{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                & p{
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    color: _palette(text-alt);
+                    text-align: center;
+                    font-size: 1.10rem;
+                }
+                & a{
+                    display: block;
+                    bottom: 0;
+                    border: solid 3px _palette(h-fg);
+                    border-radius: 10px;
+                    padding: 0.5rem 1rem;
+                    color: _palette(fg);
+                    text-align: center;
+                    margin-bottom: 1rem;
+
+                    &:hover{
+                        color: _palette(fg-alt);
+                        background-color: _palette(accent2);
+                        font-weight: _font-weights(semi-bold);
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,106 +1,226 @@
-<!DOCTYPE HTML>
-<!--
-Initial Template from	Forty by HTML5 U | html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-Content created by Niraj Ganesh
--->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-	<head>
-		<title>Niraj's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel='icon' href='favicon.ico' />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWNPQCX412"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="Showcasing some of Niraj's website development projects. This portfolio contains works that deal with content management systems like Wordpress and Wix as well as designing and structuring the website using HTML, CSS, Js, and Framer. Niraj has also worked with Weebly and Squarespace. ">
+        <meta name="keywords" content="portfolio, coding, Wordpress, Wix, Framer, front-end development, developer, software, portfolio">
+        <meta name="author" content="Niraj Ganesh">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		gtag('config', 'G-ZWNPQCX412');
-		</script>
-	</head>
-	<body class="is-preload">
+        <link rel="stylesheet" href="assets/css/main.css">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="assets/js/nav.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/e242ac24f0.js" crossorigin="anonymous"></script>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Niraj Ganesh</strong> </a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-				<nav id="menu">
-					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="Profile.html">Quick Profile Look</a></li>
-						<li><a href="Resume.html">Resume/Curriculum Vitae</a></li>
-						<li><a href="WebDev_Projects.html">Website Des/Dev Projects</a></li>
-						<li><a href="Coding_Projects.html">Coding Projects</a></li>
-						<li><a href="Community.html">Community-focused Ventures</a></li>
-						<li><a href="Portfolio.html">Design Portfolio</a></li>
-					</ul>
-				</nav>
-
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-
-							<header class="major">
-								<h1>My Portfolio</h1>
-								<h4>Hello! This portfolio reflects my products design work specifically in the areas of Product Management, Prototyping, Graphic Design, and Project Management. 
-								</h4>
-							</header>
-						</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main" style="padding:1rem;">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-								    <iframe src="assets/Portfolio.pdf" width="110%" height="800px">
-								    </iframe>
-
-
-							</section>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/niraj-ganesh/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/nganesh197" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://medium.com/@nganesh197" class="icon alt fa-medium"><span class="label">Medium</span></a></li>
-              <li><a href="https://www.instagram.com/nutshell_engineering/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="mailto:nganesh@berkeley.edu?subject = Feedback&body = Message" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; 2020</li><li>Niraj Ganesh </li>
-							<li><a href="https://html5up.net">Template from HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <main class="portfolio">
+                    <section class="one">
+                        <h1>Portfolio</h1>
+                        <h2>Front-end Development<h2>
+                    </section>
+                    <div class="item" id="content-change">
+                        <div class="inner">
+                            <div class="images">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        SwiftMotion
+                                    </div>
+                                    <img src="images/portfolio/swiftmotion.png" alt="Screenshot of SwiftMotion Website on April 23rd, 2021" title="SwiftMotion's website"/>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>SwiftMotion</h3>
+                                <hr>
+                                <br>
+                                <p>As a freelance web developer, I worked with SwiftMotion, a Berkeley SkyDeck startup, to redo their entire website. Due to the fast turnaround time as well as the client's preferences, the website was built using Wordpress, CSS, and HTML.</p><br>
+                                <p>From a clean slate, I developed the company's brand identity, color palette, and product marketing pages. The biggest challenge was showcasing the company's visionary product without giving away the secret sauce.</p>
+                                <div class="call-to-action">
+                                    <a href="https://swiftmotion.io" target=_blank>View Website</a>
+                                    <a href="https://swiftmotion.io" target=_blank>Read Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item alternate" id="extra-big">
+                        <div class="inner">
+                            <div class="images mobile-image">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        COEH
+                                    </div>
+                                    <img src="images/portfolio/coeh.png" alt="Screenshot of COEH's Website on April 23rd, 2021" title="Northern California Center for Occupational and Environmental Health's website"/>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>Northern California Center for Occupational and Environmental Health (COEH)</h3>
+                                <hr>
+                                <br>
+                                <p>I was hired as the organization's sole website developer to fix their website as a previous migration failed. Due to client's preferences, I built this website using Wix as it was easier to maintain once I left.</p><br>
+                                <p>Utilizing Adobe Illustrator, I redid the logo and most of the graphics for the website. Using web archives and backups, I reconstructed lost data for the website. I worked with the organization's program directors on adjusting the content to better reflect the organization's mission. Content migration was the hardest part since this organization existed for more than 30 years but I succeeded.</p>
+                                <div class="call-to-action">
+                                    <a href="https://www.coeh.berkeley.edu/" target=_blank>View Website</a>
+                                </div>
+                            </div>
+                            <div class="images desktop-image">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        COEH
+                                    </div>
+                                    <img src="images/portfolio/coeh.png" alt="Screenshot of COEH's Website on April 23rd, 2021" title="Northern California Center for Occupational and Environmental Health's website"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="inner">
+                            <div class="images">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        Engineering Student Council
+                                    </div>
+                                    <img src="images/portfolio/esc.png" alt="Screenshot of ESC Website on April 23rd, 2021" title="Engineering Student Council's website"/>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>Engineering Student Council</h3>
+                                <hr>
+                                <br>
+                                <p>While a student in university, I became the web master for a club on campus called the Engineering Student Council. The website needed to be re-developed as the mission of the club changed to serving the student body. </p><br>
+                                <p>Built off of Sass, CSS, HTML5, and Vanilla Js, the new website is a resource hub for incoming and current students. The content management system is handled by the Open Computing Facility. The biggest challenge was ensuring that the next web master knew how to properly update the website.</p>
+                                <div class="call-to-action">
+                                    <a href="https://esc.berkeley.edu/" target=_blank>View Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item alternate">
+                        <div class="inner">
+                            <div class="images mobile-image">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        Who? Guess!
+                                    </div>
+                                    <img src="images/portfolio/who_guess.png" alt="Screenshot of Who? Guess game on April 23rd, 2021" title="Who? Guess Game"/>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>Who? Guess!</h3>
+                                <hr>
+                                <br>
+                                <p>Bored by the lack of games available online at the beginning of the COVID-19 pandemic, a couple friends and I built a low fidelity version of the Guess Who game. </p><br>
+                                <p>I used HTML5, CSS, and Vanilla Js to make it easier for someone with little coding experience to be able to modify the game. The biggest challenge was making the game playable no matter the screen-size.</p>
+                                <div class="call-to-action">
+                                    <a href="/who_guess/index.html" target=_blank>View Game</a>
+                                </div>
+                            </div>
+                            <div class="images desktop-image">
+                                <div class="browser-bar">
+                                    <i class="browser-bar-button">
+                                    </i>
+                                    <div class="browser-title">
+                                        Who? Guess!
+                                    </div>
+                                    <img src="images/portfolio/who_guess.png" alt="Screenshot of Who? Guess game on April 23rd, 2021" title="Who? Guess Game"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.5rem; color: #555; margin-left: 2rem; font-style: italic;">Fun fact, this website was made from scratch using HTML5, Sass (CSS). and Javascript by Niraj</p>
+                    <br>
+                    <hr>
+                    <h2>Prototyping</h2>
+                    <div class="item">
+                        <div class="inner">    
+                            <div class="images mobile-image">
+                                <div id="mobile">
+                                    <img src="images/portfolio/gyrotrack.png" alt="Screenshot of GyroTrack app on April 23rd, 2021" title="GyroTrack app"/>
+                                </div>
+                            </div>                    
+                            <div class="details" style="margin-top: 1rem;">                            
+                                <h3>GyroTrack</h3>
+                                <hr>
+                                <br>
+                                <p>During my time as a co-founder of a startup, I wore many, different hats. Leading the development of the company's product, I worked on creating stills and proof of concepts.</p><br>
+                                <p>I used  Framer, PowerPoint, and MapBox to create this rendering to gather customer insights and further refine our product's core capabilities. The biggest challenge was creating something that could be made into an actual application.</p>
+                                <div class="call-to-action">
+                                    <a href="https://framer.com/share/PRODUCTION--vUKwwuUYngYZGTy7jhU8/edqidSBbs" target=_blank>Interact with mockup</a>
+                                    <a href="#" target=_blank>Read the case study</a>
+                                </div>
+                            </div>
+                            <div class="images desktop-image">
+                                <div id="mobile">
+                                    <img src="images/portfolio/gyrotrack.png" alt="Screenshot of GyroTrack app on April 23rd, 2021" title="GyroTrack app"/>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                    <hr style="display: none;">
+                    <h2 style="display: none;">Logo Designs</h2>                    
+                    <div class="item" style="display: none;">
+                        <div class="inner">
+                            <div class="images">
+                                <div class="browser-bar" id="mobile">
+                                    <div class="collage">
+                                        <img src="images/portfolio/ergo.png" alt="UC Berkeley/ UC San Francisco Ergonomics Program Logo" title="UCB/USF Ergonomics Program" class="collage-image"/>
+                                        <img src="images/portfolio/mcas.png" alt="Motorcycle Crash Alert System Logo" title="Motorcycle Crash Alert System" class="collage-image" />
+                                        <img src="images/portfolio/esc_logo.png" alt="Engineering Student Council Logo" title="Engineering Student Council" class="collage-image" style="height: 7rem !important;"/>
+                                        <img src="images/portfolio/velocitee_labs.png" alt="Velocitee Labs Logo" title="Velocitee Labs" class="collage-image" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>Engineering = designer?</h3>
+                                <hr>
+                                <br>
+                                <p>Although designing logos and graphics is not my primary purpose in life, I do have experience making logos, business cards, and posters. Having this experience has made me a better front-end developer by understanding the nuances of color and typography.   </p><br>
+                                <p>Due to the influence engineering has on my life, I take a more practial, straightforward approach in my design work. Currently, I experimenting with color choices and finding a right balance between eye-catching and being WCAG compliant.</p>
+                                <div class="call-to-action">
+                                    <a href="#" target=_blank>View Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </main>
+            </div>
+            <footer id="footer">
+                    <div class="inner">
+                        <div class=icons>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/niraj-ganesh/" class="icon alt" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://github.com/nganesh197" class="icon alt"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://medium.com/@nganesh197" class="icon alt"><i class="fab fa-medium-m"></i></a></li>
+                                <li><a href="mailto:nganesh@berkeley.edu?subject = Feedback&body = Message" class="icon alt" target="_blank"><i class="far fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-container">
+                            <ul class="copyright">
+                                <li>&copy; 2021</li><li class="ownership">Made with <a class="heart"></a> by Niraj Ganesh </li>
+                            </ul>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+        <script src="https://kit.fontawesome.com/e242ac24f0.js" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>   
+    </body>
 </html>

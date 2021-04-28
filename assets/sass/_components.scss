@@ -1,0 +1,49 @@
+.heart{ 
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    top:0px;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+    border: none;
+    margin: 0 10px;
+
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    &:before, 
+    &:after{
+      content: "";
+      background-color: red;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    
+    &:before{
+      left: -5px;
+      top: 0px;
+    }
+    
+    &:after{
+      right: 0px;
+      bottom: 5px;
+    }
+    
+    // &:hover{
+    //  transform: rotate(400deg);
+    //  transition: 2s;
+    // }    
+  }
+
+  @keyframes beat{
+    0%{
+      transform: scale(1) rotate(45deg);
+    }
+    50%{
+      transform: scale(0.6) rotate(45deg);
+    }
+  }
