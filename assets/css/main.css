@@ -3450,9 +3450,15 @@ footer .copyright-container {
 .resume .resume-details .base-information {
   border-right: solid 1px #38665B;
   height: auto;
-  width: 24vw;
+  width: 25vw;
   padding: 2rem 2rem;
   text-align: left;
+}
+
+@media screen and (min-width: 1600px) {
+  .resume .resume-details .base-information {
+    width: 15vw;
+  }
 }
 
 .resume .resume-details .base-information h2 {
@@ -3588,6 +3594,10 @@ footer .copyright-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.resume .disappear {
+  display: none;
 }
 
 main {

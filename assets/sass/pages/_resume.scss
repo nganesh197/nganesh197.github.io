@@ -76,10 +76,13 @@
         & .base-information{
             border-right:solid 1px _palette(fg);
             height: auto;
-            width: 24vw;
+            width: 25vw;
             padding: 2rem 2rem;
             text-align: left;
 
+            @include media-xl{
+                width: 15vw;
+            }
 
             & h2{
                 line-height: 3.25rem;
@@ -192,5 +195,9 @@
 
     .all{
         display: flex;
+    }
+
+    .disappear{
+        display:none;
     }
 }
