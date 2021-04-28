@@ -1909,7 +1909,7 @@ footer .copyright-container {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .community section.volunteer .card:hover {
     -webkit-transform: translateY(-2rem);
             transform: translateY(-2rem);

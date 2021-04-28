@@ -171,7 +171,7 @@
                 position: relative;
 
                 &:hover{
-                    @include media-lg{
+                    @include media-md{
                         transform: translateY(-2rem);
                         .card-header h2{
                             background: _palette(accent2);//linear-gradient(90deg,#27BBE0,#9BFA24);
