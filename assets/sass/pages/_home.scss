@@ -140,6 +140,7 @@
                     }
 
                     & select{
+                        -webkit-appearance: none;
                         background-color: _palette(bg);
                         font-size: _font-sizes(tertiary);
                         text-transform: lowercase;

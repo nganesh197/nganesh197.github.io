@@ -721,6 +721,7 @@ footer .copyright-container {
 }
 
 .home section.one .question select {
+  -webkit-appearance: none;
   background-color: #E0E0DB;
   font-size: 1.5rem;
   text-transform: lowercase;
