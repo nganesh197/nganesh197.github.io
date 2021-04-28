@@ -748,7 +748,7 @@ footer .copyright-container {
 
 @media screen and (min-width: 1600px) {
   .home section.one .question select {
-    width: 90vw;
+    width: 80vw;
     font-size: 1.75rem;
   }
 }
