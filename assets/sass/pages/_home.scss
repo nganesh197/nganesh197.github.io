@@ -159,7 +159,6 @@
                             margin-right: 2rem;
                         }
                         @include media-xl{
-                            width: 80vw;
                             font-size: _font-sizes(secondary);
                         }
                         & option{
