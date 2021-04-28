@@ -730,7 +730,7 @@ footer .copyright-container {
   border-bottom: solid 1px #38665B;
   margin-bottom: 2rem;
   cursor: pointer;
-  width: 75vw;
+  width: 80vw;
 }
 
 @media screen and (min-width: 768px) {
