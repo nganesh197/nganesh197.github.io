@@ -164,10 +164,10 @@
                         & option{
                             cursor: pointer;
                             font-size: 0.75rem;
-                            &[id='desktop']{
+                            &[id='option-desktop']{
                                 display: none;
                             }
-                            &[id='mobile']{
+                            &[id='option-mobile']{
                                 display: block;
                             }
                             

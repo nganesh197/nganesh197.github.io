@@ -757,11 +757,11 @@ footer .copyright-container {
   font-size: 0.75rem;
 }
 
-.home section.one .question select option[id='desktop'] {
+.home section.one .question select option[id='option-desktop'] {
   display: none;
 }
 
-.home section.one .question select option[id='mobile'] {
+.home section.one .question select option[id='option-mobile'] {
   display: block;
 }
 
@@ -3476,7 +3476,7 @@ footer .copyright-container {
 .resume .resume-details .base-information {
   border-right: solid 1px #38665B;
   height: auto;
-  width: 25vw;
+  width: 24vw;
   padding: 2rem 2rem;
   text-align: left;
 }
