@@ -76,7 +76,7 @@ function setupTypewriter(t) {
         }
 
         cursorPosition += 1;
-        if (cursorPosition < HTML.length - 1) {
+        if (cursorPosition < HTML.length) {
             setTimeout(type, tempTypeSpeed);
         }
 
@@ -87,8 +87,8 @@ function setupTypewriter(t) {
     };
 }
 
-var typer = document.getElementById('typewriter');
+var typeWriter = document.getElementById('typewriter');
 
-typewriter = setupTypewriter(typewriter);
+typeWriter = setupTypewriter(typeWriter);
 
-typewriter.type();
+typeWriter.type();

@@ -103,7 +103,8 @@
 }
 
 @mixin box-shadow-details{
-  box-shadow: 0 0 10px 10px _palette(h-fg);
+  box-shadow: -7px 0px 15px 0px _palette(h-fg);
+  border: solid 2px _palette(fg);
 }
 
 

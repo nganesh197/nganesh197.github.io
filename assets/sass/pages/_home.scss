@@ -38,7 +38,7 @@
                 width: 100%;
 
                 @include media-lg{
-                    width: 45%;
+                    width: 50%;
                 }
                 h1{
                     font-size: _font-sizes(mobile-main);
@@ -98,21 +98,19 @@
     
                     @include media-md{
                         padding: 2rem;
-                        width: 55%;
+                        width: 50%;
                         flex-direction:column;
                         border-top: none;
                         border-left: solid 3px _palette(fg);
                     }
                     @include media-lg{
                         padding: 2rem;
-                        width: 55%;
                         flex-direction:column;
                         border-top: none;
                         border-left: solid 3px _palette(fg);
                     }
                     @include media-xl{
                         padding: 2rem 2rem;
-                        width: 55%;
                         flex-direction:column;
                         border-left: solid 3px _palette(fg);
                     }

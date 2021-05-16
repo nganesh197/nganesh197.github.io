@@ -71,7 +71,11 @@
 
     & .resume-details{
         display: none;
-        flex-direction: row;
+        flex-direction: column;
+
+        @include media-lg{
+            flex-direction: row;
+        }
 
         & .base-information{
             border-right:solid 1px _palette(fg);

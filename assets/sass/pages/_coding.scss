@@ -184,7 +184,7 @@
                 }
                 margin:0 1.75rem;
                 &>img{
-                    width:10rem;
+                    width:100%;
                     display:block;
                     display:block;
                     @include media-xl{
@@ -195,8 +195,9 @@
 
                 & p{
                     margin: 1.5rem 0rem;
-                    color: _palette(accent2);
+                    color: #777;
                     text-align: left;
+                    text-align: justify;
                     line-height: 1.5rem;
                     font-size: _font-sizes(paragraph);
                     @include media-xl{

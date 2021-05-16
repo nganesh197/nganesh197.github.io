@@ -98,13 +98,14 @@
                     }
 
                     & [id='hashtags']{
-                        text-align: left;
+                        text-align: center;
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                         align-items: center;
+
                         justify-content: space-evenly;
-                        margin-bottom: 2rem; 
+                        // margin-bottom: 2rem; 
                         @include media-lg{
                             flex-direction: column;
                             padding: 1.5rem 0rem 0rem 0rem;
@@ -116,7 +117,6 @@
                         & .each-container{
                             height: 3rem;
                             width: fit-content;
-                            padding-bottom: 0.5rem;
                             background-color: _palette(fg);
                             border-radius: 18px;
                             @include media-md{
@@ -236,6 +236,7 @@
                             grid-column:2;
                             flex-direction: row ;
                             padding: 3.5rem ;
+                            
                         }
                         @include media-xl{
                             grid-column: 2;
@@ -255,6 +256,10 @@
 
                         &[id='degree-contain']{
                             margin-right: 3rem;
+                            & p{
+                                font-size: 1.1rem;
+                            }
+
                         }
 
                         & span{
