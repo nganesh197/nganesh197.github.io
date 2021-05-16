@@ -70,7 +70,7 @@
     }
 
     & .resume-details{
-        display: none;
+        display: flex;
         flex-direction: column;
 
         @include media-lg{
@@ -80,7 +80,10 @@
         & .base-information{
             border-right:solid 1px _palette(fg);
             height: auto;
-            width: 25vw;
+            width: 100vw;
+            @include media-lg{
+                width: 25vw;
+            }
             padding: 2rem 2rem;
             text-align: left;
 
@@ -147,7 +150,13 @@
 
         & .achievements{
             padding: 1rem 2rem;
-            width: 75vw;
+            width: 100%;
+            @include media-lg{
+                width: 75vw;
+            }
+            @include media-xl{
+                width: 100vw;
+            }
 
             p{
                 font-size: 1rem;

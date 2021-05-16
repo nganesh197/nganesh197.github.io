@@ -1,0 +1,14 @@
+section{
+    .banner{
+        height: 17rem;
+        @include media-md{
+            height: 10rem;
+        }
+        width: 100%;
+        
+        & h1{
+            color: white;
+            padding: 4rem 2.5rem;
+        }
+    }
+}

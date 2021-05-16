@@ -1205,7 +1205,7 @@ footer .copyright-container {
 .about section.one h3 {
   padding-top: 2.5rem;
   font-size: 1rem;
-  color: #555;
+  color: #333;
 }
 
 .about section.one p {
@@ -3447,7 +3447,9 @@ footer .copyright-container {
 }
 
 .resume .resume-details {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3466,9 +3468,15 @@ footer .copyright-container {
 .resume .resume-details .base-information {
   border-right: solid 1px #38665B;
   height: auto;
-  width: 25vw;
+  width: 100vw;
   padding: 2rem 2rem;
   text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .resume .resume-details .base-information {
+    width: 25vw;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -3550,7 +3558,19 @@ footer .copyright-container {
 
 .resume .resume-details .achievements {
   padding: 1rem 2rem;
-  width: 75vw;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .resume .resume-details .achievements {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .resume .resume-details .achievements {
+    width: 100vw;
+  }
 }
 
 .resume .resume-details .achievements p {
@@ -3614,6 +3634,22 @@ footer .copyright-container {
 
 .resume .disappear {
   display: none;
+}
+
+section .banner {
+  height: 17rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  section .banner {
+    height: 10rem;
+  }
+}
+
+section .banner h1 {
+  color: white;
+  padding: 4rem 2.5rem;
 }
 
 main {
