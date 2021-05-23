@@ -70,7 +70,7 @@
     }
 
     & .resume-details{
-        display: flex;
+        display: none;
         flex-direction: column;
 
         @include media-lg{
