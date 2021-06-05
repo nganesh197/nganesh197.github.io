@@ -128,7 +128,7 @@
                         @include media-lg{
                             font-size: _font-sizes(secondary);
                             font-weight: _font-weights(regular);
-                            line-height: 1.5rem;
+                            line-height: 2.25rem;
                         }
                         @include media-xl{
                             font-weight: _font-weights(regular);
@@ -162,6 +162,7 @@
                         & option{
                             cursor: pointer;
                             font-size: 0.75rem;
+
                             
                             @include media-md{
                                 font-size: _font-sizes(tertiary);
