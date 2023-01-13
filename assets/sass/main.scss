@@ -28,10 +28,10 @@ main{
 
 #page-container{
     position: relative;
-    min-height: calc(100vh-$header-height-$footer-height);
+    min-height: calc(100vh - #{$header-height} - $footer - height);
 }
 
 #content-wrap{
-    padding-bottom: $footer-height;
+    padding-bottom: $footer - height;
 }
 

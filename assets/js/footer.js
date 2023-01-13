@@ -9,7 +9,7 @@ document.write('\
             <li><a href="mailto:nganesh@berkeley.edu?subject = Feedback&body = Message" class="icon alt" target="_blank"><i class="far fa-envelope"></i></a></li>\
         </ul>\
         <ul class="copyright">\
-            <li>&copy; 2022</li><li class="ownership">Made with <a class="heart"></a> by Niraj Ganesh </li>\
+            <li>&copy; 2023</li><li class="ownership">Made with <a class="heart"></a> by Niraj Ganesh </li>\
         </ul>\
     </div>\
 </footer>\
