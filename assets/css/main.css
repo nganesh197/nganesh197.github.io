@@ -2884,9 +2884,9 @@ main a:hover {
 
 #page-container {
   position: relative;
-  min-height: calc(100vh - 3rem - 5vh);
+  min-height: calc(100vh - 3rem - $footer - height);
 }
 
 #content-wrap {
-  padding-bottom: 5vh;
+  padding-bottom: 5vh-height;
 }/*# sourceMappingURL=main.css.map */
