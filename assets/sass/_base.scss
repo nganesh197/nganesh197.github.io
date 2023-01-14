@@ -30,7 +30,6 @@ body{
 h1{
     font-size: _font-sizes(main);
     font-weight: _font-weights(bold);
-
     &[id="typewriter"]{
         display: none;
     }
@@ -91,28 +90,31 @@ a{
 }
 
 section{
-    background-color: _palette(bg);
-    height: 39rem;
-    left: 0;
-    @include top-of-page;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    &[class="general"]{
+        background-color: _palette(bg);
+        height: 39rem;
+        left: 0;
+        @include top-of-page;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        @include media-md{
+            flex-direction: row;
+            height: 30rem;
+        }
+        @include media-lg{
+            flex-direction: row;
+            height: 30rem;
+        }
+    
+        @include media-xl{
+            flex-direction: row;
+            height: 48rem;
+        }
+    }
 
-    @include media-md{
-        flex-direction: row;
-        height: 30rem;
-    }
-    @include media-lg{
-        flex-direction: row;
-        height: 30rem;
-    }
-
-    @include media-xl{
-        flex-direction: row;
-        height: 48rem;
-    }
 }
 
 
