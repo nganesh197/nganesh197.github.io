@@ -30,6 +30,45 @@ body{
 h1{
     font-size: _font-sizes(main);
     font-weight: _font-weights(bold);
+    
+    &[id="typewriter"]{
+        display: none;
+    }
+    @include media-md{
+        padding: 1rem 2rem;
+        font-size: _font-sizes(main);
+        &[id="typewriter"]{
+            display: block;
+        }
+        &[id="mobile"]{
+            display: none;
+        }
+
+    }
+
+    @include media-lg{
+        padding: 1rem 2rem;
+        font-size: _font-sizes(headliner);
+        &[id="typewriter"]{
+            display: block;
+        }
+        &[id="mobile"]{
+            display: none;
+        }
+
+    }
+
+    @include media-xl{
+        padding: 1rem 2rem;
+        font-size: 9rem;
+        &[id="typewriter"]{
+            display: block;
+        }
+        &[id="mobile"]{
+            display: none;
+        }
+
+    }
 }
 
 h2{
@@ -55,6 +94,31 @@ p{
 a{
     color: set-text-color(_palette(fg));
     text-decoration:none; 
+}
+
+section{
+    background-color: _palette(bg);
+    height: 39rem;
+    left: 0;
+    @include top-of-page;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-md{
+        flex-direction: row;
+        height: 30rem;
+    }
+    @include media-lg{
+        flex-direction: row;
+        height: 30rem;
+    }
+
+    @include media-xl{
+        flex-direction: row;
+        height: 48rem;
+    }
 }
 
 
