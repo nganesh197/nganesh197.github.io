@@ -97,10 +97,6 @@ h1[id=typewriter] {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  h1 {
-    padding: 1rem 2rem;
-    font-size: 4rem;
-  }
   h1[id=typewriter] {
     display: block;
   }
@@ -109,10 +105,6 @@ h1[id=typewriter] {
   }
 }
 @media screen and (min-width: 1024px) {
-  h1 {
-    padding: 1rem 2rem;
-    font-size: 6rem;
-  }
   h1[id=typewriter] {
     display: block;
   }
@@ -121,10 +113,6 @@ h1[id=typewriter] {
   }
 }
 @media screen and (min-width: 1600px) {
-  h1 {
-    padding: 1rem 2rem;
-    font-size: 9rem;
-  }
   h1[id=typewriter] {
     display: block;
   }
