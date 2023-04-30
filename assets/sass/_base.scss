@@ -117,4 +117,52 @@ section{
 
 }
 
+.buttons{
+    height: fit-content;
+    margin: 3rem 0;
+}
+
+.button{
+    border: solid 2px  _palette(fg-bold);
+    padding: 1rem;
+    text-decoration: none;
+    color: _palette(fg-bold);
+    font-size: _font-sizes(paragraph);
+    font-weight: _font-weights(regular);
+
+    &:hover{
+        @include transition-ease;
+        border: solid 1px  _palette(h-fg);
+        background-color: _palette(h-fg);
+        color: _palette(text-alt);
+    }
+
+}
+
+.card_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+
+    padding: 2rem 0;
+
+    @include media-md{
+        flex-direction: row;
+    }
+
+    > .card{
+        border: solid 1px _palette(h-fg);
+        margin: 1rem 1rem 1rem 0;
+        height: fit-content;
+        padding: 1rem;
+        box-shadow: 0px 0px 3px 1px _palette(h-fg);
+
+        @include media-md{
+            max-width: 23%;
+        }
+    }
+}
+
+
+
 

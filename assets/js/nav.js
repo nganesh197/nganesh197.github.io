@@ -14,19 +14,27 @@ document.write('\
                 <a href="resume.html" class="menu-nav__link" id="resume"> Re&#769sume&#769/CV</a>\
             </li>\
             <li class="menu-nav__item">\
-                <a href="coding.html" class="menu-nav__link" id="coding"> Coding Projects</a>\
+            <a href="resume.html" class="menu-nav__link" id="resume"> Robotics</a>\
             </li>\
             <li class="menu-nav__item">\
-                <a href="portfolio.html" class="menu-nav__link" id="portfolio"> Portfolio</a>\
+            <a href="resume.html" class="menu-nav__link" id="resume"> Other Interests</a>\
             </li>\
             <li class="menu-nav__item">\
-                <a href="mechanical.html" class="menu-nav__link" id="mechanical"> Mechanical Projects</a>\
-            </li>\
-            <li class="menu-nav__item">\
-                <a href="outreach.html" class="menu-nav__link" id="community"> Outreach</a>\
+            <a href="resume.html" class="menu-nav__link" id="resume"> Contact Me</a>\
             </li>\
             </ul>\
     </nav>\
 </header>\
 ');
 
+//                 <a href="coding.html" class="menu-nav__link" id="coding"> Coding Projects</a>\
+// </li>\
+// <li class="menu-nav__item">\
+//     <a href="portfolio.html" class="menu-nav__link" id="portfolio"> Portfolio</a>\
+// </li>\
+// <li class="menu-nav__item">\
+//     <a href="mechanical.html" class="menu-nav__link" id="mechanical"> Mechanical Projects</a>\
+// </li>\
+// <li class="menu-nav__item">\
+//     <a href="outreach.html" class="menu-nav__link" id="community"> Outreach</a>\
+// </li>\

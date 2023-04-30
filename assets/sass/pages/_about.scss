@@ -1,55 +1,55 @@
 .about{
+    h1{
+        color: _palette(fg);
+        font-size: _font-sizes(tertiary);
+        padding-bottom: 0.5rem;
+        font-size: _font-sizes(main);
+    }
+    h2{
+        padding-top: 2.5rem;
+        font-size: _font-sizes(quaternary);
+        color: _palette(text-alt);
+    }
+
+    h3{
+        font-size: _font-sizes(paragraph);
+        color: _palette(text-alt);
+    }
+
     section{
+        @include top-of-page;
+        padding: 1rem 1rem 0 1rem;
+        width: 100%;
         &.one{
-            @include top-of-page;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            width: 100%;
-
-            h1, h2{
-                color: _palette(fg);
-                font-size: _font-sizes(tertiary);
-                padding-bottom: 0.5rem;
-                font-size: _font-sizes(main);
-            }
-            h3{
-                padding-top: 2.5rem;
-                font-size: _font-sizes(paragraph);
-                color: _palette(text-alt);
-            }
-
+            // box-shadow: 0px 0px 3px 3px _palette(h-fg);
+            // border-radius: 3px;
             p{
                 color: _palette(text-alt);
                 line-height: 1.5rem;
 
             }
-
-            &>.inner{
+            & .section_container{
                 position: relative;
-                padding: 1rem 1rem 2rem 1rem;
-                display: grid;
-                grid-template-columns: 1;
-
-                @include media-lg{
-                    padding: 4rem;
-                    grid-template-columns: minmax(200px, auto) 75%;
-                }
-                @include media-xl{
-                    padding: 4rem;
-                    grid-template-columns: 27rem 75%;
-                }
-                width: 100%;
-                height: 100%;
-
-
-                @include media-xl{
-                    height: 90%;
-                }
+                padding: 0rem 4rem;
+                height: fit-content;
                 background-color: _palette(fg-alt);
-                box-shadow: 0px 0px 3px 3px _palette(h-fg);
-                border-radius: 3px;
 
-                
+
+            }
+            &>.inner{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include media-md{
+                    flex-direction: row;
+                }
+                @include media-lg{
+                    padding: 4rem 4rem 0 4rem;
+                }
+                @include media-xl{
+                    padding: 4rem 4rem 0 4rem;
+                }
+               
                 >.item{
                     grid-column: auto;
                     grid-row: auto;
@@ -57,9 +57,17 @@
                     height: minmax(100px, auto);
 
                     &[id='profile']{
-                        grid-column: 1;
-                        grid-row: 1/2;
-                        
+                        margin-top: 3rem;
+                        width: 40vw;
+                        @include media-lg{
+                            margin-top: 0rem;
+                        }
+                        @include media-xl{
+                            width: 20vw;
+                        }
+                    & [class="profile_pic"]{
+                        width: 100%;
+                    }
                     & [id='name']{
                         padding: 1rem 1rem;
                         font-weight: _font-weights(semi-bold);
@@ -97,72 +105,12 @@
                         }
                     }
 
-                    & [id='hashtags']{
-                        text-align: center;
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        align-items: center;
-
-                        justify-content: space-evenly;
-                        // margin-bottom: 2rem; 
-                        @include media-lg{
-                            flex-direction: column;
-                            padding: 1.5rem 0rem 0rem 0rem;
-                        }
-                        @include media-xl{
-                            flex-direction: row;
-                            padding: 0;
-                        }
-                        & .each-container{
-                            height: 3rem;
-                            width: fit-content;
-                            background-color: _palette(fg);
-                            border-radius: 18px;
-                            @include media-md{
-                                height: 3rem;
-                            }
-                            @include media-lg{
-                                height: 1.75rem;
-                            }
-                            @include media-xl{
-                                margin-top: 1rem;
-                                height: 1.8rem;
-                            }
-                            & p{
-                                color: white;
-                                margin: 0;
-                                text-align:center;
-                                font-weight: _font-weights(semi-bold);
-                                font-size: _font-sizes(paragraph);
-                                padding: 0 2rem;
-
-                                @include media-md{
-                                    font-size: _font-sizes(tertiary);
-                                    padding: 2rem;
-                                }
-
-                                @include media-lg{
-                                    font-size: _font-sizes(paragraph);
-                                }
-
-                                @include media-xl{
-                                    height: 2em;
-                                    line-height:0.65rem;
-                                    font-size: 0.75em ;
-                                    flex-direction: row;
-                                }
-
-                            }
-                        }
-
-                    }
-                        height: 35rem;
+                        height: fit-content;
                         @include media-md{
                             height: 40rem;
                         }
                         @include media-lg{
-                            height: 15rem;
+                            height: fit-content;                        
                         }
                         span img{
                             width: 60%;
@@ -224,10 +172,8 @@
                     }
 
 
-                    &[id='degrees']{
-                        grid-column: 1;
+                    &>[id='degrees']{
                         padding: 2rem 0 ;
-
                         @include media-md{
                             flex-direction: row ;
                             padding: 0rem 3.5rem ;
@@ -235,13 +181,13 @@
                         @include media-lg{
                             grid-column:2;
                             flex-direction: row ;
-                            padding: 3.5rem ;
+                            padding: 3.5rem 0;
                             
                         }
                         @include media-xl{
                             grid-column: 2;
                             flex-direction: row;
-                            padding: 2rem 3.5rem 2rem 3.5rem; 
+                            padding: 2rem 0rem; 
                         }
   
                         display:flex;
@@ -255,7 +201,6 @@
                         align-items: center;
 
                         &[id='degree-contain']{
-                            margin-right: 3rem;
                             & p{
                                 font-size: 1.1rem;
                             }
