@@ -2700,11 +2700,11 @@ footer .copyright-container {
 .resume .one {
   display: block;
   padding: 1rem;
-  height: 80vh;
 }
 @media screen and (min-width: 768px) {
   .resume .one {
-    padding: 9rem 3rem 0 0rem;
+    text-align: center;
+    padding: 2rem 3rem 0 0rem;
     margin-top: 0;
     margin-left: 3rem;
   }
@@ -2717,6 +2717,12 @@ footer .copyright-container {
   .resume .one h1 {
     margin-top: 0rem;
   }
+}
+.resume .one .resume_pdf {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 .resume .one [id=code-entry] {
   display: block;
