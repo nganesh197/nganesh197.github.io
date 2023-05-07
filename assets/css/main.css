@@ -115,7 +115,7 @@ h2 {
 }
 
 h3, h4, h5 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -307,7 +307,7 @@ header.scrolled {
 }
 @media screen and (min-width: 1600px) {
   .menu-nav__item {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 .menu-nav__item.open {
@@ -480,7 +480,8 @@ footer ul li {
   list-style-type: none;
 }
 footer ul li i {
-  margin-right: 1.5rem;
+  font-size: 1rem !important;
+  margin-right: 1.5rem !important;
   color: #38665B;
 }
 footer ul li a:hover i {
@@ -662,7 +663,7 @@ footer .copyright-container {
 .home section.one .question h2 {
   color: #38665B;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 3px;
   line-height: 2rem;
   margin-bottom: 1.5rem;
@@ -684,7 +685,7 @@ footer .copyright-container {
 .home section.one .question select {
   -webkit-appearance: none;
   background-color: #E0E0DB;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: lowercase;
   color: #38665B;
   border: none;
@@ -715,63 +716,18 @@ footer .copyright-container {
 }
 @media screen and (min-width: 768px) {
   .home section.one .question select option {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .home section.one .question select option {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .home section.one .question select option {
     font-size: 1.75rem;
   }
-}
-.home section.one .question button {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: solid 1px #38665B;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-  opacity: 0.7;
-  background-color: #E0E0DB;
-  cursor: pointer;
-  width: 75vw;
-  transition: all 0.5s ease-in-out;
-}
-@media screen and (min-width: 768px) {
-  .home section.one .question button {
-    margin-top: 0;
-    margin-left: 0rem;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .home section.one .question button {
-    margin-top: 0;
-    margin-left: 0rem;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .home section.one .question button {
-    margin-top: 0;
-    margin-left: 2rem;
-    width: auto;
-    font-size: 1.5rem;
-  }
-}
-.home section.one .question button:hover {
-  border-width: 2px;
-  padding: 0.72rem 1.8rem;
-  border-color: #663843;
-  color: #663843;
-  font-size: 1.5rem;
-  font-weight: 700;
-  transition: all 0.5s ease-in-out;
 }
 .home section.two {
   background-color: #38665B;
@@ -994,7 +950,7 @@ footer .copyright-container {
 .home section.three .container p {
   color: #fff;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: 1px;
   line-height: 2rem;
   width: 100%;
@@ -1008,14 +964,14 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .home section.three .container p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.5rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .home section.three .container p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
   }
 }
@@ -1064,7 +1020,7 @@ footer .copyright-container {
 
 .about h1 {
   color: #38665B;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-bottom: 0.5rem;
   font-size: 4rem;
 }
@@ -1161,7 +1117,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .about section.one > .inner > .item[id=profile] [id=name] {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1174,7 +1130,7 @@ footer .copyright-container {
   font-style: italic;
   text-align: center;
   padding: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0rem 0 1rem 0;
 }
 @media screen and (min-width: 768px) {
@@ -1184,13 +1140,13 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .about section.one > .inner > .item[id=profile] [id=quote] {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1600px) {
   .about section.one > .inner > .item[id=profile] [id=quote] {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 0 6rem 0 4rem;
   }
 }
@@ -1465,7 +1421,7 @@ footer .copyright-container {
 .community section.one .inner .container h2 {
   color: #ccc;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   width: 100%;
   letter-spacing: 3px;
   line-height: 2rem;
@@ -1473,7 +1429,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .community section.one .inner .container h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.25rem;
   }
@@ -1570,7 +1526,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .community section.volunteer .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 .community section.volunteer .card-body {
@@ -1582,7 +1538,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 768px) {
   .community section.volunteer .card-body p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1592,7 +1548,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1600px) {
   .community section.volunteer .card-body p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 .community section.volunteer .card .org-card {
@@ -1707,7 +1663,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1600px) {
   .community article .container-text > .description {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
   }
 }
@@ -1720,7 +1676,7 @@ footer .copyright-container {
   margin-bottom: 1rem;
 }
 .community article .container-text > .description > ul {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-left: 1.5rem;
 }
 .community article .container-text > .description > ul h5 {
@@ -2118,7 +2074,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1600px) {
   .portfolio .item .inner .details p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2.5rem;
   }
 }
@@ -2228,7 +2184,7 @@ footer .copyright-container {
   width: 100%;
   display: block;
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #333;
   font-weight: 500;
   line-height: 2rem;
@@ -2402,7 +2358,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1600px) {
   .coding .card-grid .card .images p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 .coding .card-grid .card .images .languages {
@@ -2443,7 +2399,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1600px) {
   .coding .card-grid .card .text ul li {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 .coding .card-grid .card .text .languages {
@@ -2480,7 +2436,7 @@ footer .copyright-container {
 }
 .mechanical .mech-cards-title p {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .mechanical .mech-cards-title .mech-title {
   font-size: 1.75rem;
@@ -2525,7 +2481,7 @@ footer .copyright-container {
   width: 100%;
   margin: auto;
   margin-left: rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #333;
   font-weight: 500;
   line-height: 2rem;
@@ -2761,7 +2717,7 @@ footer .copyright-container {
   padding: 0.72rem 1.8rem;
   border-color: #663843;
   color: #663843;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   transition: all 0.5s ease-in-out;
 }
@@ -2797,7 +2753,7 @@ footer .copyright-container {
 }
 .resume .resume-details .base-information p[id=tagline] {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .resume .resume-details .base-information hr {
   margin: 2rem 0;
@@ -2909,6 +2865,80 @@ section .banner h1 {
   padding: 4rem 2.5rem;
 }
 
+.contact {
+  margin-top: 7.2vh;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contact {
+    margin-top: 5rem;
+  }
+}
+.contact p {
+  color: #333;
+}
+.contact .one {
+  display: block;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .contact .one {
+    padding: 2rem 3rem 0 0rem;
+    margin-top: 0;
+    margin-left: 3rem;
+  }
+}
+.contact .one h1 {
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact .one h1 {
+    margin-top: 0rem;
+  }
+}
+.contact .one .contact_blurb {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 1rem 2rem 3rem 0;
+}
+.contact .one input, .contact .one textarea, .contact .one option, .contact .one select {
+  font-size: 1rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: 0.5rem;
+  width: 80%;
+}
+.contact .one .container {
+  display: flex;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .contact .one .container {
+    flex-direction: row;
+  }
+}
+.contact .one .contact_info {
+  width: 40vw;
+}
+.contact .one .contact_form {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .contact .one .contact_form {
+    width: 50vw;
+    margin-top: -5rem;
+  }
+}
+.contact .one .contact_form button, .contact .one .contact_form label {
+  margin-left: 0.4rem;
+}
+
 main {
   width: 99vw;
   position: relative;
@@ -2924,6 +2954,80 @@ main a {
 }
 main a:hover {
   color: #38665B;
+}
+
+button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: solid 1px #38665B;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  opacity: 0.7;
+  background-color: #E0E0DB;
+  cursor: pointer;
+  width: 75vw;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  button {
+    margin-top: 0;
+    margin-left: 0rem;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  button {
+    margin-top: 0;
+    margin-left: 0rem;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  button {
+    margin-top: 0;
+    margin-left: 2rem;
+    width: auto;
+    font-size: 1.7rem;
+  }
+}
+button:hover {
+  border-width: 4px;
+  padding: 0.72rem 1.8rem;
+  border-color: #663843;
+  color: #663843;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+}
+
+.page_icons {
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page_icons li {
+  height: 5rem;
+  list-style-type: none;
+}
+.page_icons li i {
+  font-size: 1.7rem;
+  margin-right: 1.7rem;
+  color: #38665B;
+}
+.page_icons li a:hover i {
+  color: #663843;
 }
 
 #page-container {

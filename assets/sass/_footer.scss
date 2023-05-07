@@ -19,7 +19,8 @@ footer{
         li{
             list-style-type: none;
             i{
-                margin-right: 1.5rem;
+                font-size: _font-sizes(paragraph) !important;
+                margin-right: 1.5rem !important;
                 color: _palette(fg);
             }
             a:hover{

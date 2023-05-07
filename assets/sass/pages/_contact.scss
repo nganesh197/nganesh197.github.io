@@ -1,0 +1,68 @@
+.contact {
+    @include top-of-page;
+
+    p{
+        color: _palette(text-alt);
+    }
+
+    & .one{
+        display:block;
+        padding: 1rem;
+
+        @include media-md{
+            padding: 2rem 3rem 0 0rem;
+            margin-top: 0;
+            margin-left: 3rem;
+        }
+        
+        & h1{
+            font-size: _font-sizes(main);
+            margin-top: 5rem;
+        
+            @include media-md{
+                margin-top: 0rem;
+            }
+        }
+
+        .contact_blurb{
+            font-size: _font-sizes(quaternary);
+            line-height: 2rem;
+            margin:1rem 2rem 3rem 0 ;
+        }
+
+        & input, textarea, option, select{
+            font-size: _font-sizes(paragraph);
+            font-family: _font(family);
+            margin: 0.5rem;
+            width: 80%;
+        }
+
+        .container{
+            display: flex;
+            padding: 1rem;
+            @include media-md{
+                flex-direction: row;
+            }
+        }
+
+        .contact_info{
+            width: 40vw;
+        }
+
+        .contact_form{
+            padding: 1rem;
+            font-size: _font-sizes(paragraph);
+        
+            @include media-md{
+                width: 50vw;
+                margin-top: -5rem;
+            }
+            background-color: _palette(fg-alt);
+
+            button, label{
+                margin-left: 0.4rem;
+            }
+        }
+
+    }
+}

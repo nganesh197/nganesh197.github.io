@@ -177,50 +177,7 @@
                         }
                     }
 
-                    button {
-                        margin-top: 2rem;
-                        margin-bottom: 2rem;
-                        border:solid 1px _palette(fg);
-                        padding: 0.75rem 2rem;
-                        font-size: _font-sizes(paragraph);
-                        font-weight: _font-weights(semi-bold);
-                        color:_palette(text-alt);
-                        opacity: 0.7;
-                        background-color: _palette(bg);
-                        cursor: pointer;
-                        width: 75vw;
-                        @include media-md{
-                            margin-top: 0;
-                            margin-left: 0rem;
-                            width: auto;
-                        }
-                        @include media-lg{
-                            margin-top: 0;
-                            margin-left: 0rem;
-                            width: auto;
-                        }
 
-                        @include media-xl{
-                            margin-top: 0;
-                            margin-left: 2rem;
-                            width: auto;
-                            font-size: _font-sizes(tertiary);
-                        }
-
-                        @include transition-ease;
-
-                        &:hover {
-                            border-width: 2px;
-                            padding: 0.72rem 1.8rem;
-                            border-color: _palette(accent2);
-                            color: _palette(accent2);
-                            font-size: _font-sizes(tertiary);
-                            font-weight: _font-weights(bold);
-
-                            @include transition-ease;
-                        }
-
-                    }
                 }
         }
         &.two{
