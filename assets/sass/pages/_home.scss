@@ -359,6 +359,7 @@
                 width: 50%;
                 color: _palette(fg-alt);
                 font-size: _font-sizes(secondary);
+                line-height: _font-sizes(secondary);
 
                 @include media-xl{
                     left:6%;
@@ -405,16 +406,17 @@
                     @include media-md{
                         font-size: _font-sizes(paragraph);
                         font-weight: _font-weights(regular);
-                        line-height: 1.5rem;
+                        line-height: _font-sizes(paragraph);
+
                     }
                     @include media-lg{
-                        font-size: _font-sizes(tertiary);
+                        font-size: _font-sizes(quaternary);
                         font-weight: _font-weights(regular);
-                        line-height: 1.5rem;
+                        line-height: _font-sizes(secondary);
                     }
                     @include media-xl{
                         font-size: _font-sizes(tertiary);
-                        line-height: 2rem;
+                        line-height: _font-sizes(secondary);
                     }
                 }
                 ul{

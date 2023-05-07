@@ -1,6 +1,6 @@
 @import 'vars', 'functions', 'mixin', 'components';
 @import 'base', 'menu', 'footer';
-@import 'pages/home', 'pages/about', 'pages/community', 'pages/portfolio', 'pages/coding', 'pages/mechanical', 'pages/resume', 'pages/casestudy', 'pages/contact';
+@import 'pages/home', 'pages/about', 'pages/community', 'pages/portfolio', 'pages/coding', 'pages/mechanical', 'pages/resume', 'pages/contact';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
 
@@ -24,80 +24,6 @@ main{
     }
 
 
-}
-
-button {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border:solid 1px _palette(fg);
-    padding: 0.75rem 2rem;
-    font-size: _font-sizes(paragraph);
-    font-weight: _font-weights(semi-bold);
-    color:_palette(text-alt);
-    opacity: 0.7;
-    background-color: _palette(bg);
-    cursor: pointer;
-    width: 75vw;
-    @include media-md{
-        margin-top: 0;
-        margin-left: 0rem;
-        width: auto;
-    }
-    @include media-lg{
-        margin-top: 0;
-        margin-left: 0rem;
-        width: auto;
-    }
-
-    @include media-xl{
-        margin-top: 0;
-        margin-left: 2rem;
-        width: auto;
-        font-size: _font-sizes(tertiary);
-    }
-
-    @include transition-ease;
-
-    &:hover {
-        border-width: 4px;
-        padding: 0.72rem 1.8rem;
-        border-color: _palette(accent2);
-        color: _palette(accent2);
-        font-weight: _font-weights(bold);
-
-        @include transition-ease;
-    }
-
-}
-.desktop{
-    display: none;
-
-    @include media-md{
-        display: block;
-    }
-}
-
-.page_icons{
-
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    li{
-        height:5rem;
-        list-style-type: none;
-        i{
-            font-size: _font-sizes(tertiary);
-            margin-right: _font-sizes(tertiary);
-            color: _palette(fg);
-        }
-        a:hover{
-            i{
-                color:_palette(accent2);
-            }
-        }    
-    }
 }
 
 #page-container{
