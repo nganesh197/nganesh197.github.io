@@ -5,14 +5,14 @@ function answerQuestion(){
     var x = document.getElementById("issues");
     var chosenOne = x.options[x.selectedIndex].value;
     
-    if(chosenOne=="development"){
-        window.open("portfolio.html", "_self");
-    }else if(chosenOne=="data"){
-        window.open("coding.html#data", "_self");
-    }else if(chosenOne=="supply"){
-        window.open("coding.html", "_self");
-    }else if(chosenOne=="model"){
-        window.open("mechanical.html", "_self");
+    if(chosenOne=="robotics"){
+        window.open("robotics.html", "_self");
+    }else if(chosenOne=="projects"){
+        window.open("projects.html", "_self");
+    }else if(chosenOne=="news"){
+        window.open("profile.html#news", "_self");
+    }else if(chosenOne=="volunteer"){
+        window.open("outreach.html", "_self");
     }else{
         showMenuBoxes.classList.add('unsure');
         showBetaBox.classList.add('unsure');
