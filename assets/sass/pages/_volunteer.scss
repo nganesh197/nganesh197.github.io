@@ -50,10 +50,9 @@
     section{
         font-family: _font(family);
         &.one{
-            background-color: _palette(accent6);
-            height: 26rem;
             width: 99vw;
             left: 0;
+            height: 30rem;
             @include top-of-page;
 
             @include media-lg{
@@ -151,13 +150,14 @@
                 width: 100%;
 
                 @include media-lg{
-                    height: 23rem;
+                    max-height: 25rem;
                 }
                 @include media-xl{
                     height: 25rem;
                 }
               
                 min-width: 250px;
+                max-width: 25rem;
                 padding: 1.5rem;
                 background: white;
                 /* #17141d; */

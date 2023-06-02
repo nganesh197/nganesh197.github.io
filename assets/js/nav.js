@@ -16,7 +16,7 @@ document.write('\
             <a href="resume.html" class="menu-nav__link" id="robotics"> Robotics</a>\
             </li>\
             <li class="menu-nav__item">\
-            <a href="resume.html" class="menu-nav__link" id="interest"> Other Interests</a>\
+            <a href="interests.html" class="menu-nav__link" id="interest"> Other Interests</a>\
             </li>\
             <li class="menu-nav__item">\
             <a href="contact.html" class="menu-nav__link" id="contact"> Contact Me</a>\

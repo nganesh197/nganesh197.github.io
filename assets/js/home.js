@@ -8,7 +8,7 @@ function answerQuestion(){
     if(chosenOne=="robotics"){
         window.open("robotics.html", "_self");
     }else if(chosenOne=="projects"){
-        window.open("projects.html", "_self");
+        window.open("coding.html", "_self");
     }else if(chosenOne=="news"){
         window.open("profile.html#news", "_self");
     }else if(chosenOne=="volunteer"){
@@ -19,9 +19,6 @@ function answerQuestion(){
     }
 }
 
-
-
-
 function setupTypewriter(t) {
     var HTML = t.innerHTML;
 
@@ -31,7 +28,7 @@ function setupTypewriter(t) {
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 100,
+        typeSpeed = 75,
     tempTypeSpeed = 0;
 
     var type = function() {
@@ -76,8 +73,10 @@ function setupTypewriter(t) {
         }
 
         cursorPosition += 1;
-        if (cursorPosition < HTML.length) {
+        if (cursorPosition < HTML.length-1) {
             setTimeout(type, tempTypeSpeed);
+        }else if(cursorPosition < HTML.length){
+            setTimeout(type, 400);
         }
 
     };

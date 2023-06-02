@@ -89,95 +89,17 @@ a{
     text-decoration:none; 
 }
 
-section{
-    &[class="general"]{
-        background-color: _palette(bg);
-        height: 39rem;
-        left: 0;
-        @include top-of-page;
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    
-        @include media-md{
-            flex-direction: row;
-            height: 30rem;
-        }
-        @include media-lg{
-            flex-direction: row;
-            height: 30rem;
-        }
-    
-        @include media-xl{
-            flex-direction: row;
-            height: 48rem;
-        }
-    }
-
-}
-
-.buttons{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-button, .button {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border:solid 1px _palette(fg);
-    padding: 0.75rem 2rem;
-    font-size: _font-sizes(paragraph);
-    font-weight: _font-weights(semi-bold);
-    color:_palette(text-alt);
-    opacity: 0.7;
-    background-color: _palette(bg);
-    cursor: pointer;
-    width: 75vw;
-
-    @include media-md{
-        margin-top: 0;
-        margin-left: 0rem;
-        width: auto;
-    }
-    @include media-lg{
-        margin-top: 0;
-        margin-left: 0rem;
-        width: auto;
-    }
-
-    @include media-xl{
-        margin-top: 0;
-        margin-left: 2rem;
-        width: auto;
-        font-size: _font-sizes(tertiary);
-    }
-
-    @include transition-ease;
-
-    &:hover {
-        border-width: 4px;
-        padding: 0.72rem 1.8rem;
-        border-color: _palette(accent2);
-        color: _palette(accent2);
-        font-weight: _font-weights(bold);
-
-        @include transition-ease;
-    }
-
-}
-
-.button.alt{
-    color:_palette(fg-alt);
-    opacity: 1;
-    background-color: #ffff0000;
-}
 .desktop{
     display: none;
 
     @include media-md{
         display: block;
+    }
+}
+
+.mobile{
+    @include media-md{
+        display: none;
     }
 }
 
@@ -204,30 +126,6 @@ button, .button {
     }
 }
 
-
-.card_list{
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-
-    padding: 2rem 0;
-
-    @include media-md{
-        flex-direction: row;
-    }
-
-    > .card{
-        border: solid 1px _palette(h-fg);
-        margin: 1rem 1rem 1rem 0;
-        height: fit-content;
-        padding: 1rem;
-        box-shadow: 0px 0px 3px 1px _palette(h-fg);
-
-        @include media-md{
-            max-width: 23%;
-        }
-    }
-}
 
 
 
