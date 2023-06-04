@@ -1926,6 +1926,11 @@ footer .copyright-container {
 }
 .portfolio .one {
   padding: 3rem 3rem 0 0rem;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: none;
+}
+.portfolio h1 {
+  color: #38665B !important;
 }
 .portfolio h1, .portfolio h2 {
   margin-left: 1rem;

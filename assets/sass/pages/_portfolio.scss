@@ -3,8 +3,12 @@
 
     & .one{
         padding: 3rem 3rem 0 0rem;
+        background-color: #ffffff00;
+        background-image: none;
     }
-    
+    & h1{
+        color: _palette(bg-alt) !important;
+    }
     & h1, h2{
         margin-left: 1rem;
         @include media-lg{
