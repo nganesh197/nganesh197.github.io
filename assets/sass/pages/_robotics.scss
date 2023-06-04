@@ -1,0 +1,86 @@
+.robotics{
+    & section{
+        &.subsection{
+            background-color: _palette(fg-alt);
+            margin: 1rem;
+            padding: 2rem;
+        }
+        &.two{
+            display: flex;
+            flex-direction:column;
+
+            @include media-md{
+                flex-direction: row;
+            }
+
+            & img{
+                width: 100%;
+                @include media-md{
+                    max-width: 50%;
+                }
+                overflow: clip;
+            }
+        }
+        
+    }
+    & .project_content{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 0;
+        @include media-md{
+            flex-direction: row;
+        }
+
+        & .project_image{
+            width: 100%;
+            @include media-md{
+                margin-left: 2rem;
+                max-width: 50vw;
+            }
+        }
+    }
+    & h2{
+        width: 100%;
+        @include media-lg{
+            width: 40%;
+        }
+        display: block;
+        margin: auto;
+        font-size: _font-sizes(tertiary);
+        @include media-xl{
+            font-size: _font-sizes(secondary);
+        }
+        color: _palette(text-alt);
+        font-weight: _font-weights(regular);
+        line-height: _font-sizes(secondary)*1.2;
+    }
+
+    & h4{
+        font-size: _font-sizes(quaternary);
+        @include media-xl{
+            font-size: _font-sizes(tertiary);
+        }
+    }
+    & p{
+        color: _palette(text-alt);
+        line-height: _font-sizes(paragraph)*1.4;
+    }
+    & ul{
+        padding-left: 1rem;
+
+        & li{
+            margin-top: 1rem;
+        }
+    }
+    .button{
+        @include media-md{
+            margin-right: 1rem;
+        }
+    }
+    & .card{
+        @include media-md{
+            height: auto;
+            max-width: 23rem;
+        }
+    }
+}

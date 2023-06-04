@@ -13,7 +13,7 @@ document.write('\
                 <a href="resume.html" class="menu-nav__link" id="resume"> Re&#769sume&#769/CV</a>\
             </li>\
             <li class="menu-nav__item">\
-            <a href="resume.html" class="menu-nav__link" id="robotics"> Robotics</a>\
+            <a href="robotics.html" class="menu-nav__link" id="robotics"> Robotics</a>\
             </li>\
             <li class="menu-nav__item">\
             <a href="interests.html" class="menu-nav__link" id="interest"> Other Interests</a>\

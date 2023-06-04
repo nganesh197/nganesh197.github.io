@@ -94,14 +94,6 @@ button, .button {
 @media screen and (min-width: 768px) {
   button, .button {
     margin-top: 0;
-    margin-left: 0rem;
-    width: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  button, .button {
-    margin-top: 0;
-    margin-left: 0rem;
     width: auto;
   }
 }
@@ -123,7 +115,7 @@ button:hover, .button:hover {
 }
 
 .button.alt {
-  color: #fff;
+  color: #F2F3F4;
   opacity: 1;
   background-color: rgba(255, 255, 0, 0);
 }
@@ -147,7 +139,7 @@ button:hover, .button:hover {
   width: 100%;
   padding: 1rem;
   box-shadow: 0px 0px 3px 1px #ccc;
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 .card_list > .card > h3 {
   color: #333;
@@ -290,7 +282,7 @@ h1, h2, h3 {
 }
 
 p {
-  color: #fff;
+  color: #F2F3F4;
   font-weight: 500;
 }
 
@@ -409,13 +401,13 @@ header.scrolled {
     visibility: visible;
   }
   .menu-nav__item.scrolled {
-    border-right: solid 1px #fff;
+    border-right: solid 1px #F2F3F4;
   }
   .menu-nav__item.scrolled:last-child {
     border-right: none;
   }
   .menu-nav__item.scrolled a.scrolled {
-    color: #fff;
+    color: #F2F3F4;
   }
   .menu-nav__item.scrolled a.scrolled:hover {
     color: #ccc;
@@ -563,13 +555,13 @@ header.scrolled {
   transform: rotate(-45deg) translate(3px, -7px);
 }
 .menu-btn__burger.scrolled {
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 .menu-btn__burger.scrolled::before {
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 .menu-btn__burger.scrolled::after {
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 .menu-btn__burger.scrolled.open {
   background-color: transparent;
@@ -883,7 +875,7 @@ footer .copyright-container {
   background-color: #DE9D5E;
 }
 .home section.two .container .box:nth-child(6n-2) p {
-  color: #fff !important;
+  color: #F2F3F4 !important;
 }
 .home section.two .container .box:nth-child(6n-1) {
   background-color: #362117;
@@ -924,7 +916,7 @@ footer .copyright-container {
     background-color: #DE9D5E;
   }
   .home section.two .container .box:nth-child(6n-2) .inner p {
-    color: #fff;
+    color: #F2F3F4;
   }
   .home section.two .container .box:nth-child(6n-1) {
     width: 40%;
@@ -950,7 +942,7 @@ footer .copyright-container {
 }
 .home section.two .container .box .inner h3 {
   font-size: 1.75rem;
-  color: #fff;
+  color: #F2F3F4;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 1px;
@@ -1022,7 +1014,7 @@ footer .copyright-container {
   top: 20%;
   left: 8%;
   width: 50%;
-  color: #fff;
+  color: #F2F3F4;
   font-size: 1.75rem;
   line-height: 1.75rem;
 }
@@ -1037,7 +1029,7 @@ footer .copyright-container {
   top: 25%;
   left: 8%;
   width: 20%;
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 @media screen and (min-width: 1600px) {
   .home section.three hr {
@@ -1065,7 +1057,7 @@ footer .copyright-container {
   }
 }
 .home section.three .container p {
-  color: #fff;
+  color: #F2F3F4;
   font-weight: 500;
   font-size: 1.7rem;
   letter-spacing: 1px;
@@ -1081,7 +1073,7 @@ footer .copyright-container {
 }
 @media screen and (min-width: 1024px) {
   .home section.three .container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.75rem;
   }
@@ -1108,8 +1100,8 @@ footer .copyright-container {
 .home section.three .container ul li a {
   padding: 1rem 4rem 1rem 1rem;
   font-size: 1rem;
-  border: solid 2px #fff;
-  color: #fff;
+  border: solid 2px #F2F3F4;
+  color: #F2F3F4;
   text-transform: uppercase;
   letter-spacing: 3px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 31.49 31.49' style='enable-background:new 0 0 31.49 31.49;' xml:space='preserve'%3E%3Cpath style='fill:%23FFFFFF;' d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111 C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587 c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
@@ -1143,7 +1135,7 @@ footer .copyright-container {
 }
 .about h2 {
   padding-top: 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #333;
 }
 .about h3 {
@@ -1171,10 +1163,15 @@ footer .copyright-container {
 }
 .about section.profile .section_container {
   position: relative;
-  padding: 0rem 4rem;
+  padding: 0rem 1rem;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #fff;
+  background-color: #F2F3F4;
+}
+@media screen and (min-width: 768px) {
+  .about section.profile .section_container {
+    padding: 0rem 4rem;
+  }
 }
 .about section.profile > .inner {
   display: flex;
@@ -1508,7 +1505,7 @@ footer .copyright-container {
 .community section.one .inner h1 {
   font-size: 4rem;
   font-weight: 600;
-  color: #fff;
+  color: #F2F3F4;
   border-bottom: solid 2px #ccc;
   padding: 3rem 0 1.5rem 0;
 }
@@ -2176,7 +2173,7 @@ footer .copyright-container {
 }
 .portfolio .item .inner .details h3 {
   font-size: 1.75rem;
-  color: #fff;
+  color: #F2F3F4;
   padding-bottom: 0.5rem;
 }
 @media screen and (min-width: 1600px) {
@@ -2210,8 +2207,8 @@ footer .copyright-container {
   margin-right: 1rem;
   margin-top: 1rem;
   font-size: 0.75rem;
-  border: solid 2px #fff;
-  color: #fff;
+  border: solid 2px #F2F3F4;
+  color: #F2F3F4;
   text-transform: uppercase;
   letter-spacing: 3px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 31.49 31.49' style='enable-background:new 0 0 31.49 31.49;' xml:space='preserve'%3E%3Cpath style='fill:%23FFFFFF;' d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111 C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587 c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
@@ -2310,7 +2307,7 @@ footer .copyright-container {
   margin-top: 3rem;
   box-shadow: -7px 0px 15px 0px #ccc;
   border: solid 2px #38665B;
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 @media screen and (min-width: 768px) {
   .coding section.two .skills-box {
@@ -2603,7 +2600,7 @@ footer .copyright-container {
   margin-top: 3rem;
   box-shadow: -7px 0px 15px 0px #ccc;
   border: solid 2px #38665B;
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 @media screen and (min-width: 768px) {
   .mechanical section.two .skills-box {
@@ -2717,7 +2714,7 @@ footer .copyright-container {
   margin-bottom: 1rem;
 }
 .mechanical section.display-grid .card a:hover {
-  color: #fff;
+  color: #F2F3F4;
   background-color: #663843;
   font-weight: 600;
 }
@@ -2813,7 +2810,7 @@ footer .copyright-container {
   }
 }
 .contact .one_contact .contact_blurb {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   margin: 1rem 2rem 3rem 0;
 }
@@ -2857,7 +2854,7 @@ footer .copyright-container {
   padding: 1rem;
   font-size: 1rem;
   width: 90vw;
-  background-color: #fff;
+  background-color: #F2F3F4;
 }
 @media screen and (min-width: 768px) {
   .contact .one_contact .contact_form {
@@ -2871,6 +2868,97 @@ footer .copyright-container {
 
 .interests section.two {
   padding: 2rem;
+}
+
+.robotics section.subsection {
+  background-color: #F2F3F4;
+  margin: 1rem;
+  padding: 2rem;
+}
+.robotics section.two {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .robotics section.two {
+    flex-direction: row;
+  }
+}
+.robotics section.two img {
+  width: 100%;
+  overflow: clip;
+}
+@media screen and (min-width: 768px) {
+  .robotics section.two img {
+    max-width: 50%;
+  }
+}
+.robotics .project_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .robotics .project_content {
+    flex-direction: row;
+  }
+}
+.robotics .project_content .project_image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .robotics .project_content .project_image {
+    margin-left: 2rem;
+    max-width: 50vw;
+  }
+}
+.robotics h2 {
+  width: 100%;
+  display: block;
+  margin: auto;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 2.1rem;
+}
+@media screen and (min-width: 1024px) {
+  .robotics h2 {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .robotics h2 {
+    font-size: 1.75rem;
+  }
+}
+.robotics h4 {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 1600px) {
+  .robotics h4 {
+    font-size: 1.7rem;
+  }
+}
+.robotics p {
+  color: #333;
+  line-height: 1.4rem;
+}
+.robotics ul {
+  padding-left: 1rem;
+}
+.robotics ul li {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .robotics .button {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .robotics .card {
+    height: auto;
+    max-width: 23rem;
+  }
 }
 
 main {

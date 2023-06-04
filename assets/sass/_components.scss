@@ -68,12 +68,6 @@ button, .button {
 
   @include media-md{
       margin-top: 0;
-      margin-left: 0rem;
-      width: auto;
-  }
-  @include media-lg{
-      margin-top: 0;
-      margin-left: 0rem;
       width: auto;
   }
 
