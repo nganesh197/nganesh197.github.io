@@ -142,6 +142,11 @@
                                 text-align: left;
                             }
                         }
+                        .button{
+                            @include media-md{
+                                margin-right: 1rem;
+                            }
+                        }
                         @include media-md{
                             padding: 0 3.5rem 1.5rem 3.5rem; 
                         }
@@ -184,7 +189,7 @@
                         @include media-lg{
                             grid-column:2;
                             flex-direction: row ;
-                            padding: 3.5rem 1rem;
+                            padding: 0.5rem 1rem;
                             
                         }
                         @include media-xl{
@@ -207,6 +212,7 @@
                             & p{
                                 font-size: 1.1rem;
                             }
+                            margin-right: 1rem;
 
                         }
 

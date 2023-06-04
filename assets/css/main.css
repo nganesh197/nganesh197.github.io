@@ -1308,6 +1308,11 @@ footer .copyright-container {
   }
 }
 @media screen and (min-width: 768px) {
+  .about section.profile > .inner > .item[id=summary] .button {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .about section.profile > .inner > .item[id=summary] {
     padding: 0 3.5rem 1.5rem 3.5rem;
   }
@@ -1357,7 +1362,7 @@ footer .copyright-container {
   .about section.profile > .inner > .item > [id=degrees] {
     grid-column: 2;
     flex-direction: row;
-    padding: 3.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1372,6 +1377,9 @@ footer .copyright-container {
   flex-direction: row;
   margin-bottom: 0.75rem;
   align-items: center;
+}
+.about section.profile > .inner > .item .each-container[id=degree-contain] {
+  margin-right: 1rem;
 }
 .about section.profile > .inner > .item .each-container[id=degree-contain] p {
   font-size: 1.1rem;
